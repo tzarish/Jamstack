@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jamstack - Playlist Builder</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <video autoplay muted loop playsinline id="background-video" class="background-video">
+        <source src="media/background-video.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+
+    <h6 class="title">Yours Truly, Rishabh Rohira</h6>
+    <div id="app">
+        <h1>Welcome to J<span><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcz9AtjjSFrcne-fYJlNKanPDq7lBvk1MXTg&s"
+                    alt="Play Icon" class="play-icon"></span>mstack!</h1>
+        <h2>What's on your mind today?</h2>
+        <div class="events-and-data">
+            <div class="input-section">
+                <input type="text" id="song-input" placeholder="Enter song name or artist...">
+            </div>
+
+            <h3>Your Playlist:</h3>
+
+            <ul id="playlist">
+            </ul>
+
+            <div id="playlist-container">
+                <div class="filter-section">
+                    <label for="genre-filter">Filter by Genre:</label>
+                    <select id="genre-filter">
+                        <option value="all">All</option>
+                        <option value="rock">Rock</option>
+                        <option value="pop">Pop</option>
+                        <option value="jazz">Jazz</option>
+                        <option value="classical">Classical</option>
+                        <option value="hiphop">Hip-Hop</option>
+                    </select>
+                </div>
+
+                <div class="scrollable-info">
+                    <p id="song-count">Total Songs: 0</p>
+                    <p id="total-duration">Total Duration: 0 mins</p>
+                </div>
+            </div>
+            <div class="button-container">
+                <div class="song-section">
+                    <button id="add-song-button">Add Song</button>
+                    <button id="remove-song-button">Remove Song</button>
+                </div>
+
+                <div class="playlist-section">
+                    <button id="generate-playlist-button">Generate Playlist</button>
+                    <button id="clear-playlist-button">Clear Playlist</button>
+                    <button id="save-playlist-button">Save Playlist</button>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+</body>
+
+</html>

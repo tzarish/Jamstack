@@ -1,0 +1,3402 @@
+[
+    {
+        "id": 1,
+        "title": "Apocalypse",
+        "artist": "Cigarettes After Sex",
+        "album": "Cigarettes After Sex",
+        "releaseDate": "2017-06-09",
+        "genre": "Dream Pop",
+        "bpm": 136,
+        "duration": "5:01",
+        "mood": [
+            "melancholic",
+            "romantic",
+            "dreamy"
+        ],
+        "energyLevel": 3,
+        "explicit": false
+    },
+    {
+        "id": 2,
+        "title": "K.",
+        "artist": "Cigarettes After Sex",
+        "album": "Cigarettes After Sex",
+        "releaseDate": "2017-06-09",
+        "genre": "Dream Pop",
+        "bpm": 65,
+        "duration": "4:40",
+        "mood": [
+            "intimate",
+            "sensual",
+            "hazy"
+        ],
+        "energyLevel": 2,
+        "explicit": false
+    },
+    {
+        "id": 3,
+        "title": "Blinding Lights",
+        "artist": "The Weeknd",
+        "album": "After Hours",
+        "releaseDate": "2019-11-29",
+        "genre": "Synthwave",
+        "bpm": 171,
+        "duration": "3:20",
+        "mood": [
+            "euphoric",
+            "nostalgic",
+            "energetic"
+        ],
+        "energyLevel": 9,
+        "explicit": false
+    },
+    {
+        "id": 4,
+        "title": "Starboy",
+        "artist": "The Weeknd",
+        "album": "Starboy",
+        "releaseDate": "2016-09-21",
+        "genre": "R&B",
+        "bpm": 106,
+        "duration": "3:50",
+        "mood": [
+            "confident",
+            "dark",
+            "swagger"
+        ],
+        "energyLevel": 7,
+        "explicit": true
+    },
+    {
+        "id": 5,
+        "title": "Change (In the House of Flies)",
+        "artist": "Deftones",
+        "album": "White Pony",
+        "releaseDate": "2000-06-20",
+        "genre": "Alternative Metal",
+        "bpm": 110,
+        "duration": "4:59",
+        "mood": [
+            "atmospheric",
+            "heavy",
+            "hypnotic"
+        ],
+        "energyLevel": 7,
+        "explicit": false
+    },
+    {
+        "id": 6,
+        "title": "Digital Bath",
+        "artist": "Deftones",
+        "album": "White Pony",
+        "releaseDate": "2000-06-20",
+        "genre": "Alternative Metal",
+        "bpm": 95,
+        "duration": "4:15",
+        "mood": [
+            "dark",
+            "ethereal",
+            "intense"
+        ],
+        "energyLevel": 6,
+        "explicit": false
+    },
+    {
+        "id": 7,
+        "title": "King For a Day",
+        "artist": "Pierce The Veil",
+        "album": "Collide with the Sky",
+        "releaseDate": "2012-07-17",
+        "genre": "Post-Hardcore",
+        "bpm": 160,
+        "duration": "5:40",
+        "mood": [
+            "aggressive",
+            "passionate",
+            "chaotic"
+        ],
+        "energyLevel": 10,
+        "explicit": true
+    },
+    {
+        "id": 8,
+        "title": "Caraphernelia",
+        "artist": "Pierce The Veil",
+        "album": "Selfish Machines",
+        "releaseDate": "2010-06-22",
+        "genre": "Post-Hardcore",
+        "bpm": 143,
+        "duration": "3:25",
+        "mood": [
+            "emotional",
+            "intense",
+            "raw"
+        ],
+        "energyLevel": 9,
+        "explicit": false
+    },
+    {
+        "id": 9,
+        "title": "LIMBO",
+        "artist": "keshi",
+        "album": "GABRIEL",
+        "releaseDate": "2022-03-25",
+        "genre": "Alternative R&B",
+        "bpm": 145,
+        "duration": "2:29",
+        "mood": [
+            "melancholic",
+            "yearning",
+            "vulnerable"
+        ],
+        "energyLevel": 5,
+        "explicit": false
+    },
+    {
+        "id": 10,
+        "title": "SOMEBODY",
+        "artist": "keshi",
+        "album": "GABRIEL",
+        "releaseDate": "2022-03-25",
+        "genre": "Alternative R&B",
+        "bpm": 125,
+        "duration": "3:18",
+        "mood": [
+            "lonely",
+            "introspective",
+            "wistful"
+        ],
+        "energyLevel": 4,
+        "explicit": false
+    },
+    {
+        "id": 11,
+        "title": "i know",
+        "artist": "kanii",
+        "album": "lucid",
+        "releaseDate": "2023-08-11",
+        "genre": "Hyperpop",
+        "bpm": 150,
+        "duration": "2:03",
+        "mood": [
+            "ethereal",
+            "dreamy",
+            "intoxicating"
+        ],
+        "energyLevel": 6,
+        "explicit": false
+    },
+    {
+        "id": 12,
+        "title": "Don't",
+        "artist": "Bryson Tiller",
+        "album": "T R A P S O U L",
+        "releaseDate": "2015-10-02",
+        "genre": "Trap Soul",
+        "bpm": 144,
+        "duration": "3:39",
+        "mood": [
+            "smooth",
+            "confident",
+            "nocturnal"
+        ],
+        "energyLevel": 6,
+        "explicit": true
+    },
+    {
+        "id": 13,
+        "title": "Exchange",
+        "artist": "Bryson Tiller",
+        "album": "T R A P S O U L",
+        "releaseDate": "2015-10-02",
+        "genre": "Trap Soul",
+        "bpm": 72,
+        "duration": "3:18",
+        "mood": [
+            "sensual",
+            "intimate",
+            "smooth"
+        ],
+        "energyLevel": 5,
+        "explicit": true
+    },
+    {
+        "id": 14,
+        "title": "Bohemian Rhapsody",
+        "artist": "Queen",
+        "album": "A Night at the Opera",
+        "releaseDate": "1975-10-31",
+        "genre": "Progressive Rock",
+        "bpm": 72,
+        "duration": "5:55",
+        "mood": [
+            "epic",
+            "theatrical",
+            "dramatic"
+        ],
+        "energyLevel": 8,
+        "explicit": false
+    },
+    {
+        "id": 15,
+        "title": "Smells Like Teen Spirit",
+        "artist": "Nirvana",
+        "album": "Nevermind",
+        "releaseDate": "1991-09-10",
+        "genre": "Grunge",
+        "bpm": 117,
+        "duration": "5:01",
+        "mood": [
+            "rebellious",
+            "angsty",
+            "raw"
+        ],
+        "energyLevel": 10,
+        "explicit": false
+    },
+    {
+        "id": 16,
+        "title": "Creep",
+        "artist": "Radiohead",
+        "album": "Pablo Honey",
+        "releaseDate": "1992-09-21",
+        "genre": "Alternative Rock",
+        "bpm": 92,
+        "duration": "3:58",
+        "mood": [
+            "alienated",
+            "melancholic",
+            "yearning"
+        ],
+        "energyLevel": 7,
+        "explicit": false
+    },
+    {
+        "id": 17,
+        "title": "Take On Me",
+        "artist": "a-ha",
+        "album": "Hunting High and Low",
+        "releaseDate": "1984-10-19",
+        "genre": "Synth-pop",
+        "bpm": 169,
+        "duration": "3:46",
+        "mood": [
+            "upbeat",
+            "nostalgic",
+            "joyful"
+        ],
+        "energyLevel": 9,
+        "explicit": false
+    },
+    {
+        "id": 18,
+        "title": "Midnight City",
+        "artist": "M83",
+        "album": "Hurry Up, We're Dreaming",
+        "releaseDate": "2011-10-18",
+        "genre": "Synth-pop",
+        "bpm": 105,
+        "duration": "4:04",
+        "mood": [
+            "euphoric",
+            "cinematic",
+            "driving"
+        ],
+        "energyLevel": 8,
+        "explicit": false
+    },
+    {
+        "id": 19,
+        "title": "Sweater Weather",
+        "artist": "The Neighbourhood",
+        "album": "I Love You.",
+        "releaseDate": "2012-03-28",
+        "genre": "Alternative Rock",
+        "bpm": 124,
+        "duration": "4:00",
+        "mood": [
+            "moody",
+            "romantic",
+            "chill"
+        ],
+        "energyLevel": 5,
+        "explicit": false
+    },
+    {
+        "id": 20,
+        "title": "The Less I Know The Better",
+        "artist": "Tame Impala",
+        "album": "Currents",
+        "releaseDate": "2015-07-17",
+        "genre": "Psychedelic Pop",
+        "bpm": 116,
+        "duration": "3:36",
+        "mood": [
+            "groovy",
+            "melancholic",
+            "hypnotic"
+        ],
+        "energyLevel": 7,
+        "explicit": false
+    },
+    {
+        "id": 21,
+        "title": "No Role Modelz",
+        "artist": "J. Cole",
+        "album": "2014 Forest Hills Drive",
+        "releaseDate": "2014-12-09",
+        "genre": "Hip-Hop",
+        "bpm": 84,
+        "duration": "4:53",
+        "mood": [
+            "introspective",
+            "confident",
+            "nostalgic"
+        ],
+        "energyLevel": 6,
+        "explicit": true
+    },
+    {
+        "id": 22,
+        "title": "HUMBLE.",
+        "artist": "Kendrick Lamar",
+        "album": "DAMN.",
+        "releaseDate": "2017-03-30",
+        "genre": "Hip-Hop",
+        "bpm": 150,
+        "duration": "2:57",
+        "mood": [
+            "aggressive",
+            "confident",
+            "commanding"
+        ],
+        "energyLevel": 9,
+        "explicit": true
+    },
+    {
+        "id": 23,
+        "title": "Redbone",
+        "artist": "Childish Gambino",
+        "album": "Awaken, My Love!",
+        "releaseDate": "2016-11-17",
+        "genre": "Neo-Soul",
+        "bpm": 158,
+        "duration": "5:26",
+        "mood": [
+            "paranoid",
+            "groovy",
+            "psychedelic"
+        ],
+        "energyLevel": 5,
+        "explicit": true
+    },
+    {
+        "id": 24,
+        "title": "Get Lucky",
+        "artist": "Daft Punk",
+        "album": "Random Access Memories",
+        "releaseDate": "2013-04-19",
+        "genre": "Disco",
+        "bpm": 116,
+        "duration": "6:09",
+        "mood": [
+            "joyful",
+            "funky",
+            "uplifting"
+        ],
+        "energyLevel": 8,
+        "explicit": false
+    },
+    {
+        "id": 25,
+        "title": "Clarity",
+        "artist": "Zedd",
+        "album": "Clarity",
+        "releaseDate": "2012-10-02",
+        "genre": "EDM",
+        "bpm": 128,
+        "duration": "4:31",
+        "mood": [
+            "euphoric",
+            "emotional",
+            "uplifting"
+        ],
+        "energyLevel": 9,
+        "explicit": false
+    },
+    {
+        "id": 26,
+        "title": "Ocean Eyes",
+        "artist": "Billie Eilish",
+        "album": "dont smile at me",
+        "releaseDate": "2016-11-18",
+        "genre": "Electropop",
+        "bpm": 90,
+        "duration": "3:20",
+        "mood": [
+            "dreamy",
+            "vulnerable",
+            "ethereal"
+        ],
+        "energyLevel": 3,
+        "explicit": false
+    },
+    {
+        "id": 27,
+        "title": "bad guy",
+        "artist": "Billie Eilish",
+        "album": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+        "releaseDate": "2019-03-29",
+        "genre": "Electropop",
+        "bpm": 135,
+        "duration": "3:14",
+        "mood": [
+            "dark",
+            "playful",
+            "edgy"
+        ],
+        "energyLevel": 7,
+        "explicit": false
+    },
+    {
+        "id": 28,
+        "title": "Mask Off",
+        "artist": "Future",
+        "album": "Future",
+        "releaseDate": "2017-02-17",
+        "genre": "Trap",
+        "bpm": 150,
+        "duration": "3:24",
+        "mood": [
+            "hypnotic",
+            "dark",
+            "atmospheric"
+        ],
+        "energyLevel": 7,
+        "explicit": true
+    },
+    {
+        "id": 29,
+        "title": "XO TOUR Llif3",
+        "artist": "Lil Uzi Vert",
+        "album": "Luv Is Rage 2",
+        "releaseDate": "2017-02-26",
+        "genre": "Emo Rap",
+        "bpm": 155,
+        "duration": "3:03",
+        "mood": [
+            "dark",
+            "emotional",
+            "aggressive"
+        ],
+        "energyLevel": 8,
+        "explicit": true
+    },
+    {
+        "id": 30,
+        "title": "Sicko Mode",
+        "artist": "Travis Scott",
+        "album": "Astroworld",
+        "releaseDate": "2018-08-03",
+        "genre": "Hip-Hop",
+        "bpm": 155,
+        "duration": "5:13",
+        "mood": [
+            "intense",
+            "chaotic",
+            "energetic"
+        ],
+        "energyLevel": 10,
+        "explicit": true
+    },
+    {
+        "id": 31,
+        "title": "Runaway",
+        "artist": "Kanye West",
+        "album": "My Beautiful Dark Twisted Fantasy",
+        "releaseDate": "2010-10-25",
+        "genre": "Hip-Hop",
+        "bpm": 88,
+        "duration": "9:08",
+        "mood": [
+            "introspective",
+            "epic",
+            "melancholic"
+        ],
+        "energyLevel": 6,
+        "explicit": true
+    },
+    {
+        "id": 32,
+        "title": "Sunflower",
+        "artist": "Post Malone",
+        "album": "Spider-Man: Into the Spider-Verse",
+        "releaseDate": "2018-10-18",
+        "genre": "Pop Rap",
+        "bpm": 90,
+        "duration": "2:38",
+        "mood": [
+            "upbeat",
+            "carefree",
+            "sunny"
+        ],
+        "energyLevel": 7,
+        "explicit": false
+    },
+    {
+        "id": 33,
+        "title": "Circles",
+        "artist": "Post Malone",
+        "album": "Hollywood's Bleeding",
+        "releaseDate": "2019-08-30",
+        "genre": "Pop",
+        "bpm": 120,
+        "duration": "3:35",
+        "mood": [
+            "melancholic",
+            "reflective",
+            "smooth"
+        ],
+        "energyLevel": 5,
+        "explicit": false
+    },
+    {
+        "id": 34,
+        "title": "Pumped Up Kicks",
+        "artist": "Foster the People",
+        "album": "Torches",
+        "releaseDate": "2010-09-14",
+        "genre": "Indie Pop",
+        "bpm": 128,
+        "duration": "3:59",
+        "mood": [
+            "catchy",
+            "dark",
+            "upbeat"
+        ],
+        "energyLevel": 7,
+        "explicit": false
+    },
+    {
+        "id": 35,
+        "title": "Closer",
+        "artist": "The Chainsmokers",
+        "album": "Collage",
+        "releaseDate": "2016-07-29",
+        "genre": "EDM",
+        "bpm": 95,
+        "duration": "4:04",
+        "mood": [
+            "nostalgic",
+            "romantic",
+            "bittersweet"
+        ],
+        "energyLevel": 6,
+        "explicit": false
+    },
+    {
+        "id": 36,
+        "title": "Radioactive",
+        "artist": "Imagine Dragons",
+        "album": "Night Visions",
+        "releaseDate": "2012-02-06",
+        "genre": "Alternative Rock",
+        "bpm": 136,
+        "duration": "3:06",
+        "mood": [
+            "powerful",
+            "apocalyptic",
+            "anthemic"
+        ],
+        "energyLevel": 9,
+        "explicit": false
+    },
+    {
+        "id": 37,
+        "title": "Demons",
+        "artist": "Imagine Dragons",
+        "album": "Night Visions",
+        "releaseDate": "2012-09-04",
+        "genre": "Alternative Rock",
+        "bpm": 90,
+        "duration": "2:57",
+        "mood": [
+            "vulnerable",
+            "emotional",
+            "introspective"
+        ],
+        "energyLevel": 5,
+        "explicit": false
+    },
+    {
+        "id": 38,
+        "title": "Mr. Brightside",
+        "artist": "The Killers",
+        "album": "Hot Fuss",
+        "releaseDate": "2003-09-29",
+        "genre": "Alternative Rock",
+        "bpm": 148,
+        "duration": "3:42",
+        "mood": [
+            "energetic",
+            "jealous",
+            "anthemic"
+        ],
+        "energyLevel": 9,
+        "explicit": false
+    },
+    {
+        "id": 39,
+        "title": "Seven Nation Army",
+        "artist": "The White Stripes",
+        "album": "Elephant",
+        "releaseDate": "2003-04-01",
+        "genre": "Garage Rock",
+        "bpm": 120,
+        "duration": "3:51",
+        "mood": [
+            "powerful",
+            "rebellious",
+            "iconic"
+        ],
+        "energyLevel": 8,
+        "explicit": false
+    },
+    {
+        "id": 40,
+        "title": "Sweet Child O' Mine",
+        "artist": "Guns N' Roses",
+        "album": "Appetite for Destruction",
+        "releaseDate": "1987-08-17",
+        "genre": "Hard Rock",
+        "bpm": 122,
+        "duration": "5:56",
+        "mood": [
+            "passionate",
+            "nostalgic",
+            "epic"
+        ],
+        "energyLevel": 9,
+        "explicit": false
+    },
+    {
+        "id": 41,
+        "title": "Wonderwall",
+        "artist": "Oasis",
+        "album": "(What's the Story) Morning Glory?",
+        "releaseDate": "1995-10-30",
+        "genre": "Britpop",
+        "bpm": 87,
+        "duration": "4:18",
+        "mood": [
+            "hopeful",
+            "romantic",
+            "nostalgic"
+        ],
+        "energyLevel": 6,
+        "explicit": false
+    },
+    {
+        "id": 42,
+        "title": "Basket Case",
+        "artist": "Green Day",
+        "album": "Dookie",
+        "releaseDate": "1994-02-01",
+        "genre": "Punk Rock",
+        "bpm": 171,
+        "duration": "3:03",
+        "mood": [
+            "anxious",
+            "energetic",
+            "frantic"
+        ],
+        "energyLevel": 9,
+        "explicit": false
+    },
+    {
+        "id": 43,
+        "title": "Boulevard of Broken Dreams",
+        "artist": "Green Day",
+        "album": "American Idiot",
+        "releaseDate": "2004-09-21",
+        "genre": "Punk Rock",
+        "bpm": 86,
+        "duration": "4:20",
+        "mood": [
+            "lonely",
+            "melancholic",
+            "defiant"
+        ],
+        "energyLevel": 6,
+        "explicit": false
+    },
+    {
+        "id": 44,
+        "title": "In the End",
+        "artist": "Linkin Park",
+        "album": "Hybrid Theory",
+        "releaseDate": "2000-10-24",
+        "genre": "Nu Metal",
+        "bpm": 105,
+        "duration": "3:36",
+        "mood": [
+            "frustrated",
+            "emotional",
+            "anthemic"
+        ],
+        "energyLevel": 8,
+        "explicit": false
+    },
+    {
+        "id": 45,
+        "title": "Numb",
+        "artist": "Linkin Park",
+        "album": "Meteora",
+        "releaseDate": "2003-03-25",
+        "genre": "Nu Metal",
+        "bpm": 105,
+        "duration": "3:07",
+        "mood": [
+            "defeated",
+            "emotional",
+            "intense"
+        ],
+        "energyLevel": 7,
+        "explicit": false
+    },
+    {
+        "id": 46,
+        "title": "Chop Suey!",
+        "artist": "System of a Down",
+        "album": "Toxicity",
+        "releaseDate": "2001-09-04",
+        "genre": "Alternative Metal",
+        "bpm": 128,
+        "duration": "3:30",
+        "mood": [
+            "chaotic",
+            "aggressive",
+            "theatrical"
+        ],
+        "energyLevel": 10,
+        "explicit": false
+    },
+    {
+        "id": 47,
+        "title": "Toxicity",
+        "artist": "System of a Down",
+        "album": "Toxicity",
+        "releaseDate": "2001-09-04",
+        "genre": "Alternative Metal",
+        "bpm": 122,
+        "duration": "3:39",
+        "mood": [
+            "intense",
+            "political",
+            "chaotic"
+        ],
+        "energyLevel": 9,
+        "explicit": false
+    },
+    {
+        "id": 48,
+        "title": "Enter Sandman",
+        "artist": "Metallica",
+        "album": "Metallica",
+        "releaseDate": "1991-07-29",
+        "genre": "Heavy Metal",
+        "bpm": 123,
+        "duration": "5:31",
+        "mood": [
+            "dark",
+            "ominous",
+            "powerful"
+        ],
+        "energyLevel": 9,
+        "explicit": false
+    },
+    {
+        "id": 49,
+        "title": "Nothing Else Matters",
+        "artist": "Metallica",
+        "album": "Metallica",
+        "releaseDate": "1991-08-12",
+        "genre": "Heavy Metal",
+        "bpm": 46,
+        "duration": "6:28",
+        "mood": [
+            "emotional",
+            "romantic",
+            "epic"
+        ],
+        "energyLevel": 5,
+        "explicit": false
+    },
+    {
+        "id": 50,
+        "title": "Paranoid",
+        "artist": "Black Sabbath",
+        "album": "Paranoid",
+        "releaseDate": "1970-09-18",
+        "genre": "Heavy Metal",
+        "bpm": 164,
+        "duration": "2:48",
+        "mood": [
+            "frantic",
+            "anxious",
+            "aggressive"
+        ],
+        "energyLevel": 10,
+        "explicit": false
+    },
+    {
+        "id": 51,
+        "title": "Crazy Train",
+        "artist": "Ozzy Osbourne",
+        "album": "Blizzard of Ozz",
+        "releaseDate": "1980-09-20",
+        "genre": "Heavy Metal",
+        "bpm": 138,
+        "duration": "4:50",
+        "mood": [
+            "chaotic",
+            "energetic",
+            "rebellious"
+        ],
+        "energyLevel": 9,
+        "explicit": false
+    },
+    {
+        "id": 52,
+        "title": "Back in Black",
+        "artist": "AC/DC",
+        "album": "Back in Black",
+        "releaseDate": "1980-07-25",
+        "genre": "Hard Rock",
+        "bpm": 94,
+        "duration": "4:15",
+        "mood": [
+            "confident",
+            "powerful",
+            "anthemic"
+        ],
+        "energyLevel": 9,
+        "explicit": false
+    },
+    {
+        "id": 53,
+        "title": "Highway to Hell",
+        "artist": "AC/DC",
+        "album": "Highway to Hell",
+        "releaseDate": "1979-07-27",
+        "genre": "Hard Rock",
+        "bpm": 116,
+        "duration": "3:28",
+        "mood": [
+            "rebellious",
+            "carefree",
+            "driving"
+        ],
+        "energyLevel": 9,
+        "explicit": false
+    },
+    {
+        "id": 54,
+        "title": "Stairway to Heaven",
+        "artist": "Led Zeppelin",
+        "album": "Led Zeppelin IV",
+        "releaseDate": "1971-11-08",
+        "genre": "Progressive Rock",
+        "bpm": 82,
+        "duration": "8:02",
+        "mood": [
+            "epic",
+            "mystical",
+            "transcendent"
+        ],
+        "energyLevel": 7,
+        "explicit": false
+    },
+    {
+        "id": 55,
+        "title": "Hotel California",
+        "artist": "Eagles",
+        "album": "Hotel California",
+        "releaseDate": "1976-12-08",
+        "genre": "Rock",
+        "bpm": 74,
+        "duration": "6:30",
+        "mood": [
+            "mysterious",
+            "melancholic",
+            "atmospheric"
+        ],
+        "energyLevel": 5,
+        "explicit": false
+    },
+    {
+        "id": 56,
+        "title": "Comfortably Numb",
+        "artist": "Pink Floyd",
+        "album": "The Wall",
+        "releaseDate": "1979-11-30",
+        "genre": "Progressive Rock",
+        "bpm": 63,
+        "duration": "6:23",
+        "mood": [
+            "detached",
+            "melancholic",
+            "transcendent"
+        ],
+        "energyLevel": 5,
+        "explicit": false
+    },
+    {
+        "id": 57,
+        "title": "Wish You Were Here",
+        "artist": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "releaseDate": "1975-09-12",
+        "genre": "Progressive Rock",
+        "bpm": 60,
+        "duration": "5:34",
+        "mood": [
+            "nostalgic",
+            "melancholic",
+            "reflective"
+        ],
+        "energyLevel": 4,
+        "explicit": false
+    },
+    {
+        "id": 58,
+        "title": "Another Brick in the Wall",
+        "artist": "Pink Floyd",
+        "album": "The Wall",
+        "releaseDate": "1979-11-30",
+        "genre": "Progressive Rock",
+        "bpm": 104,
+        "duration": "3:59",
+        "mood": [
+            "rebellious",
+            "defiant",
+            "dark"
+        ],
+        "energyLevel": 7,
+        "explicit": false
+    },
+    {
+        "id": 59,
+        "title": "Africa",
+        "artist": "Toto",
+        "album": "Toto IV",
+        "releaseDate": "1982-09-30",
+        "genre": "Soft Rock",
+        "bpm": 92,
+        "duration": "4:55",
+        "mood": [
+            "nostalgic",
+            "uplifting",
+            "adventurous"
+        ],
+        "energyLevel": 6,
+        "explicit": false
+    },
+    {
+        "id": 60,
+        "title": "September",
+        "artist": "Earth, Wind & Fire",
+        "album": "The Best of Earth, Wind & Fire Vol. 1",
+        "releaseDate": "1978-11-18",
+        "genre": "Funk",
+        "bpm": 126,
+        "duration": "3:35",
+        "mood": [
+            "joyful",
+            "celebratory",
+            "groovy"
+        ],
+        "energyLevel": 9,
+        "explicit": false
+    },
+    {
+        "id": 61,
+        "title": "Superstition",
+        "artist": "Stevie Wonder",
+        "album": "Talking Book",
+        "releaseDate": "1972-10-24",
+        "genre": "Funk",
+        "bpm": 100,
+        "duration": "4:26",
+        "mood": [
+            "groovy",
+            "funky",
+            "mysterious"
+        ],
+        "energyLevel": 8,
+        "explicit": false
+    },
+    {
+        "id": 62,
+        "title": "Billie Jean",
+        "artist": "Michael Jackson",
+        "album": "Thriller",
+        "releaseDate": "1982-11-30",
+        "genre": "Pop",
+        "bpm": 117,
+        "duration": "4:54",
+        "mood": [
+            "mysterious",
+            "groovy",
+            "iconic"
+        ],
+        "energyLevel": 7,
+        "explicit": false
+    },
+    {
+        "id": 63,
+        "title": "Thriller",
+        "artist": "Michael Jackson",
+        "album": "Thriller",
+        "releaseDate": "1982-11-30",
+        "genre": "Pop",
+        "bpm": 118,
+        "duration": "5:57",
+        "mood": [
+            "spooky",
+            "theatrical",
+            "energetic"
+        ],
+        "energyLevel": 8,
+        "explicit": false
+    },
+    {
+        "id": 64,
+        "title": "Beat It",
+        "artist": "Michael Jackson",
+        "album": "Thriller",
+        "releaseDate": "1982-11-30",
+        "genre": "Pop Rock",
+        "bpm": 139,
+        "duration": "4:18",
+        "mood": [
+            "aggressive",
+            "confident",
+            "energetic"
+        ],
+        "energyLevel": 9,
+        "explicit": false
+    },
+    {
+        "id": 65,
+        "title": "Like a Prayer",
+        "artist": "Madonna",
+        "album": "Like a Prayer",
+        "releaseDate": "1989-03-03",
+        "genre": "Pop",
+        "bpm": 112,
+        "duration": "5:41",
+        "mood": [
+            "spiritual",
+            "uplifting",
+            "passionate"
+        ],
+        "energyLevel": 7,
+        "explicit": false
+    },
+    {
+        "id": 66,
+        "title": "Fade Into You",
+        "artist": "Mazzy Star",
+        "album": "So Tonight That I Might See",
+        "releaseDate": "1993-10-05",
+        "genre": "Dream Pop",
+        "bpm": 102,
+        "duration": "4:55",
+        "mood": [
+            "dreamy",
+            "melancholic",
+            "ethereal"
+        ],
+        "energyLevel": 3,
+        "explicit": false
+    },
+    {
+        "id": 67,
+        "title": "1979",
+        "artist": "The Smashing Pumpkins",
+        "album": "Mellon Collie and the Infinite Sadness",
+        "releaseDate": "1995-10-23",
+        "genre": "Alternative Rock",
+        "bpm": 132,
+        "duration": "4:25",
+        "mood": [
+            "nostalgic",
+            "dreamy",
+            "bittersweet"
+        ],
+        "energyLevel": 6,
+        "explicit": false
+    },
+    {
+        "id": 68,
+        "title": "Everlong",
+        "artist": "Foo Fighters",
+        "album": "The Colour and the Shape",
+        "releaseDate": "1997-05-20",
+        "genre": "Post-Grunge",
+        "bpm": 158,
+        "duration": "4:10",
+        "mood": [
+            "passionate",
+            "energetic",
+            "anthemic"
+        ],
+        "energyLevel": 9,
+        "explicit": false
+    },
+    {
+        "id": 69,
+        "title": "Sex on Fire",
+        "artist": "Kings of Leon",
+        "album": "Only by the Night",
+        "releaseDate": "2008-09-09",
+        "genre": "Alternative Rock",
+        "bpm": 150,
+        "duration": "3:23",
+        "mood": [
+            "intense",
+            "passionate",
+            "driving"
+        ],
+        "energyLevel": 8,
+        "explicit": false
+    },
+    {
+        "id": 70,
+        "title": "Do I Wanna Know?",
+        "artist": "Arctic Monkeys",
+        "album": "AM",
+        "releaseDate": "2013-09-09",
+        "genre": "Indie Rock",
+        "bpm": 85,
+        "duration": "4:32",
+        "mood": [
+            "sultry",
+            "mysterious",
+            "groovy"
+        ],
+        "energyLevel": 6,
+        "explicit": false
+    },
+    {
+        "id": 71,
+        "title": "R U Mine?",
+        "artist": "Arctic Monkeys",
+        "album": "AM",
+        "releaseDate": "2013-09-09",
+        "genre": "Indie Rock",
+        "bpm": 103,
+        "duration": "3:21",
+        "mood": [
+            "energetic",
+            "seductive",
+            "driving"
+        ],
+        "energyLevel": 8,
+        "explicit": false
+    },
+    {
+        "id": 72,
+        "title": "Fluorescent Adolescent",
+        "artist": "Arctic Monkeys",
+        "album": "Favourite Worst Nightmare",
+        "releaseDate": "2007-04-23",
+        "genre": "Indie Rock",
+        "bpm": 150,
+        "duration": "2:57",
+        "mood": [
+            "nostalgic",
+            "energetic",
+            "bittersweet"
+        ],
+        "energyLevel": 8,
+        "explicit": false
+    },
+    {
+        "id": 73,
+        "title": "Float On",
+        "artist": "Modest Mouse",
+        "album": "Good News for People Who Love Bad News",
+        "releaseDate": "2004-03-16",
+        "genre": "Indie Rock",
+        "bpm": 134,
+        "duration": "3:28",
+        "mood": [
+            "optimistic",
+            "carefree",
+            "upbeat"
+        ],
+        "energyLevel": 7,
+        "explicit": false
+    },
+    {
+        "id": 74,
+        "title": "Electric Feel",
+        "artist": "MGMT",
+        "album": "Oracular Spectacular",
+        "releaseDate": "2007-10-02",
+        "genre": "Neo-Psychedelia",
+        "bpm": 107,
+        "duration": "3:49",
+        "mood": [
+            "groovy",
+            "psychedelic",
+            "funky"
+        ],
+        "energyLevel": 7,
+        "explicit": false
+    },
+    {
+        "id": 75,
+        "title": "Kids",
+        "artist": "MGMT",
+        "album": "Oracular Spectacular",
+        "releaseDate": "2007-10-02",
+        "genre": "Neo-Psychedelia",
+        "bpm": 130,
+        "duration": "5:02",
+        "mood": [
+            "euphoric",
+            "nostalgic",
+            "psychedelic"
+        ],
+        "energyLevel": 8,
+        "explicit": false
+    },
+    {
+        "id": 76,
+        "title": "Tainted Love",
+        "artist": "Soft Cell",
+        "album": "Non-Stop Erotic Cabaret",
+        "releaseDate": "1981-07-01",
+        "genre": "Synth-pop",
+        "bpm": 132,
+        "duration": "2:40",
+        "mood": [
+            "dark",
+            "energetic",
+            "passionate"
+        ],
+        "energyLevel": 8,
+        "explicit": false
+    },
+    {
+        "id": 77,
+        "title": "Blue Monday",
+        "artist": "New Order",
+        "album": "Power, Corruption & Lies",
+        "releaseDate": "1983-03-07",
+        "genre": "Synth-pop",
+        "bpm": 123,
+        "duration": "7:29",
+        "mood": [
+            "hypnotic",
+            "melancholic",
+            "electronic"
+        ],
+        "energyLevel": 7,
+        "explicit": false
+    },
+    {
+        "id": 78,
+        "title": "Enjoy the Silence",
+        "artist": "Depeche Mode",
+        "album": "Violator",
+        "releaseDate": "1990-03-19",
+        "genre": "Synth-pop",
+        "bpm": 113,
+        "duration": "6:13",
+        "mood": [
+            "melancholic",
+            "ethereal",
+            "atmospheric"
+        ],
+        "energyLevel": 5,
+        "explicit": false
+    },
+    {
+        "id": 79,
+        "title": "Linger",
+        "artist": "The Cranberries",
+        "album": "Everybody Else Is Doing It, So Why Can't We?",
+        "releaseDate": "1993-02-21",
+        "genre": "Alternative Rock",
+        "bpm": 100,
+        "duration": "4:34",
+        "mood": [
+            "melancholic",
+            "yearning",
+            "tender"
+        ],
+        "energyLevel": 4,
+        "explicit": false
+    },
+    {
+        "id": 80,
+        "title": "Dreams",
+        "artist": "The Cranberries",
+        "album": "Everybody Else Is Doing It, So Why Can't We?",
+        "releaseDate": "1993-02-21",
+        "genre": "Alternative Rock",
+        "bpm": 139,
+        "duration": "4:32",
+        "mood": [
+            "hopeful",
+            "dreamy",
+            "uplifting"
+        ],
+        "energyLevel": 6,
+        "explicit": false
+    },
+    {
+        "id": 81,
+        "title": "Zombie",
+        "artist": "The Cranberries",
+        "album": "No Need to Argue",
+        "releaseDate": "1994-09-19",
+        "genre": "Alternative Rock",
+        "bpm": 82,
+        "duration": "5:06",
+        "mood": [
+            "angry",
+            "haunting",
+            "political"
+        ],
+        "energyLevel": 8,
+        "explicit": false
+    },
+    {
+        "id": 82,
+        "title": "There Is a Light That Never Goes Out",
+        "artist": "The Smiths",
+        "album": "The Queen Is Dead",
+        "releaseDate": "1986-06-16",
+        "genre": "Jangle Pop",
+        "bpm": 88,
+        "duration": "4:02",
+        "mood": [
+            "melancholic",
+            "romantic",
+            "yearning"
+        ],
+        "energyLevel": 5,
+        "explicit": false
+    },
+    {
+        "id": 83,
+        "title": "Just Like Heaven",
+        "artist": "The Cure",
+        "album": "Kiss Me, Kiss Me, Kiss Me",
+        "releaseDate": "1987-05-05",
+        "genre": "Alternative Rock",
+        "bpm": 126,
+        "duration": "3:32",
+        "mood": [
+            "euphoric",
+            "nostalgic",
+            "dreamy"
+        ],
+        "energyLevel": 7,
+        "explicit": false
+    },
+    {
+        "id": 84,
+        "title": "Lovesong",
+        "artist": "The Cure",
+        "album": "Disintegration",
+        "releaseDate": "1989-05-02",
+        "genre": "Alternative Rock",
+        "bpm": 110,
+        "duration": "3:29",
+        "mood": [
+            "romantic",
+            "intimate",
+            "tender"
+        ],
+        "energyLevel": 5,
+        "explicit": false
+    },
+    {
+        "id": 85,
+        "title": "Friday I'm in Love",
+        "artist": "The Cure",
+        "album": "Wish",
+        "releaseDate": "1992-04-21",
+        "genre": "Alternative Rock",
+        "bpm": 130,
+        "duration": "3:37",
+        "mood": [
+            "joyful",
+            "upbeat",
+            "carefree"
+        ],
+        "energyLevel": 8,
+        "explicit": false
+    },
+    {
+        "id": 86,
+        "title": "Space Song",
+        "artist": "Beach House",
+        "album": "Depression Cherry",
+        "releaseDate": "2015-08-28",
+        "genre": "Dream Pop",
+        "bpm": 128,
+        "duration": "5:20",
+        "mood": [
+            "ethereal",
+            "melancholic",
+            "cosmic"
+        ],
+        "energyLevel": 4,
+        "explicit": false
+    },
+    {
+        "id": 87,
+        "title": "Myth",
+        "artist": "Beach House",
+        "album": "Bloom",
+        "releaseDate": "2012-05-15",
+        "genre": "Dream Pop",
+        "bpm": 118,
+        "duration": "4:18",
+        "mood": [
+            "dreamy",
+            "nostalgic",
+            "ethereal"
+        ],
+        "energyLevel": 5,
+        "explicit": false
+    },
+    {
+        "id": 88,
+        "title": "Sedona",
+        "artist": "Houndmouth",
+        "album": "Little Neon Limelight",
+        "releaseDate": "2015-03-17",
+        "genre": "Indie Folk",
+        "bpm": 128,
+        "duration": "3:48",
+        "mood": [
+            "adventurous",
+            "energetic",
+            "carefree"
+        ],
+        "energyLevel": 8,
+        "explicit": false
+    },
+    {
+        "id": 89,
+        "title": "Ho Hey",
+        "artist": "The Lumineers",
+        "album": "The Lumineers",
+        "releaseDate": "2012-04-03",
+        "genre": "Folk Rock",
+        "bpm": 82,
+        "duration": "2:43",
+        "mood": [
+            "uplifting",
+            "romantic",
+            "anthemic"
+        ],
+        "energyLevel": 7,
+        "explicit": false
+    },
+    {
+        "id": 90,
+        "title": "Little Talks",
+        "artist": "Of Monsters and Men",
+        "album": "My Head Is an Animal",
+        "releaseDate": "2011-09-20",
+        "genre": "Indie Folk",
+        "bpm": 103,
+        "duration": "4:24",
+        "mood": [
+            "uplifting",
+            "anthemic",
+            "bittersweet"
+        ],
+        "energyLevel": 8,
+        "explicit": false
+    },
+    {
+        "id": 91,
+        "title": "Riptide",
+        "artist": "Vance Joy",
+        "album": "Dream Your Life Away",
+        "releaseDate": "2013-05-21",
+        "genre": "Indie Folk",
+        "bpm": 102,
+        "duration": "3:24",
+        "mood": [
+            "cheerful",
+            "carefree",
+            "upbeat"
+        ],
+        "energyLevel": 7,
+        "explicit": false
+    },
+    {
+        "id": 92,
+        "title": "Shut Up and Dance",
+        "artist": "Walk the Moon",
+        "album": "Talking Is Hard",
+        "releaseDate": "2014-11-26",
+        "genre": "New Wave",
+        "bpm": 128,
+        "duration": "3:19",
+        "mood": [
+            "euphoric",
+            "energetic",
+            "joyful"
+        ],
+        "energyLevel": 9,
+        "explicit": false
+    },
+    {
+        "id": 93,
+        "title": "Somebody That I Used to Know",
+        "artist": "Gotye",
+        "album": "Making Mirrors",
+        "releaseDate": "2011-07-05",
+        "genre": "Indie Pop",
+        "bpm": 130,
+        "duration": "4:04",
+        "mood": [
+            "melancholic",
+            "bitter",
+            "reflective"
+        ],
+        "energyLevel": 5,
+        "explicit": false
+    },
+    {
+        "id": 94,
+        "title": "Tongue Tied",
+        "artist": "Grouplove",
+        "album": "Never Trust a Happy Song",
+        "releaseDate": "2011-09-13",
+        "genre": "Indie Rock",
+        "bpm": 138,
+        "duration": "3:37",
+        "mood": [
+            "energetic",
+            "carefree",
+            "exuberant"
+        ],
+        "energyLevel": 9,
+        "explicit": false
+    },
+    {
+        "id": 95,
+        "title": "Safe and Sound",
+        "artist": "Capital Cities",
+        "album": "In a Tidal Wave of Mystery",
+        "releaseDate": "2011-01-06",
+        "genre": "Indietronica",
+        "bpm": 120,
+        "duration": "3:13",
+        "mood": [
+            "upbeat",
+            "reassuring",
+            "groovy"
+        ],
+        "energyLevel": 7,
+        "explicit": false
+    },
+    {
+        "id": 96,
+        "title": "Sail",
+        "artist": "AWOLNATION",
+        "album": "Megalithic Symphony",
+        "releaseDate": "2010-11-17",
+        "genre": "Electronic Rock",
+        "bpm": 119,
+        "duration": "4:19",
+        "mood": [
+            "intense",
+            "atmospheric",
+            "rebellious"
+        ],
+        "energyLevel": 8,
+        "explicit": false
+    },
+    {
+        "id": 97,
+        "title": "Counting Stars",
+        "artist": "OneRepublic",
+        "album": "Native",
+        "releaseDate": "2013-03-25",
+        "genre": "Pop Rock",
+        "bpm": 122,
+        "duration": "4:17",
+        "mood": [
+            "hopeful",
+            "energetic",
+            "anthemic"
+        ],
+        "energyLevel": 8,
+        "explicit": false
+    },
+    {
+        "id": 98,
+        "title": "Stressed Out",
+        "artist": "Twenty One Pilots",
+        "album": "Blurryface",
+        "releaseDate": "2015-05-15",
+        "genre": "Alternative Hip-Hop",
+        "bpm": 170,
+        "duration": "3:22",
+        "mood": [
+            "nostalgic",
+            "anxious",
+            "introspective"
+        ],
+        "energyLevel": 6,
+        "explicit": false
+    },
+    {
+        "id": 99,
+        "title": "Ride",
+        "artist": "Twenty One Pilots",
+        "album": "Blurryface",
+        "releaseDate": "2015-05-15",
+        "genre": "Alternative Hip-Hop",
+        "bpm": 75,
+        "duration": "3:34",
+        "mood": [
+            "introspective",
+            "melancholic",
+            "vulnerable"
+        ],
+        "energyLevel": 4,
+        "explicit": false
+    },
+    {
+        "id": 100,
+        "title": "Heathens",
+        "artist": "Twenty One Pilots",
+        "album": "Suicide Squad: The Album",
+        "releaseDate": "2016-06-16",
+        "genre": "Alternative Hip-Hop",
+        "bpm": 90,
+        "duration": "3:15",
+        "mood": [
+            "dark",
+            "tense",
+            "moody"
+        ],
+        "energyLevel": 6,
+        "explicit": false
+    },
+    {
+        "id": 101,
+        "title": "The Night We Met",
+        "artist": "Lord Huron",
+        "album": "Strange Trails",
+        "releaseDate": "2015-04-08",
+        "genre": "Indie Folk",
+        "bpm": 127,
+        "duration": "3:28",
+        "mood": [
+            "nostalgic",
+            "heartbroken",
+            "yearning"
+        ],
+        "energyLevel": 5,
+        "explicit": false
+    },
+    {
+        "id": 102,
+        "title": "Skinny Love",
+        "artist": "Bon Iver",
+        "album": "For Emma, Forever Ago",
+        "releaseDate": "2007-07-08",
+        "genre": "Indie Folk",
+        "bpm": 150,
+        "duration": "3:58",
+        "mood": [
+            "fragile",
+            "melancholic",
+            "raw"
+        ],
+        "energyLevel": 4,
+        "explicit": false
+    },
+    {
+        "id": 103,
+        "title": "Holocene",
+        "artist": "Bon Iver",
+        "album": "Bon Iver, Bon Iver",
+        "releaseDate": "2011-06-21",
+        "genre": "Chamber Folk",
+        "bpm": 132,
+        "duration": "5:36",
+        "mood": [
+            "contemplative",
+            "ethereal",
+            "peaceful"
+        ],
+        "energyLevel": 3,
+        "explicit": false
+    },
+    {
+        "id": 104,
+        "title": "Flume",
+        "artist": "Bon Iver",
+        "album": "For Emma, Forever Ago",
+        "releaseDate": "2007-07-08",
+        "genre": "Indie Folk",
+        "bpm": 98,
+        "duration": "3:39",
+        "mood": [
+            "isolated",
+            "melancholic",
+            "tender"
+        ],
+        "energyLevel": 3,
+        "explicit": false
+    },
+    {
+        "id": 105,
+        "title": "Summertime Sadness",
+        "artist": "Lana Del Rey",
+        "album": "Born to Die",
+        "releaseDate": "2012-01-27",
+        "genre": "Baroque Pop",
+        "bpm": 103,
+        "duration": "4:25",
+        "mood": [
+            "melancholic",
+            "nostalgic",
+            "cinematic"
+        ],
+        "energyLevel": 5,
+        "explicit": false
+    },
+    {
+        "id": 106,
+        "title": "Video Games",
+        "artist": "Lana Del Rey",
+        "album": "Born to Die",
+        "releaseDate": "2011-10-07",
+        "genre": "Baroque Pop",
+        "bpm": 61,
+        "duration": "4:42",
+        "mood": [
+            "dreamy",
+            "melancholic",
+            "romantic"
+        ],
+        "energyLevel": 3,
+        "explicit": false
+    },
+    {
+        "id": 107,
+        "title": "Young and Beautiful",
+        "artist": "Lana Del Rey",
+        "album": "The Great Gatsby OST",
+        "releaseDate": "2013-04-23",
+        "genre": "Orchestral Pop",
+        "bpm": 75,
+        "duration": "3:56",
+        "mood": [
+            "melancholic",
+            "romantic",
+            "vulnerable"
+        ],
+        "energyLevel": 4,
+        "explicit": false
+    },
+    {
+        "id": 108,
+        "title": "West Coast",
+        "artist": "Lana Del Rey",
+        "album": "Ultraviolence",
+        "releaseDate": "2014-04-14",
+        "genre": "Psychedelic Rock",
+        "bpm": 130,
+        "duration": "4:16",
+        "mood": [
+            "hazy",
+            "seductive",
+            "atmospheric"
+        ],
+        "energyLevel": 6,
+        "explicit": false
+    },
+    {
+        "id": 109,
+        "title": "Thinkin Bout You",
+        "artist": "Frank Ocean",
+        "album": "Channel Orange",
+        "releaseDate": "2012-07-10",
+        "genre": "Alternative R&B",
+        "bpm": 88,
+        "duration": "3:21",
+        "mood": [
+            "vulnerable",
+            "yearning",
+            "tender"
+        ],
+        "energyLevel": 4,
+        "explicit": false
+    },
+    {
+        "id": 110,
+        "title": "Ivy",
+        "artist": "Frank Ocean",
+        "album": "Blonde",
+        "releaseDate": "2016-08-20",
+        "genre": "Alternative R&B",
+        "bpm": 169,
+        "duration": "4:09",
+        "mood": [
+            "bittersweet",
+            "nostalgic",
+            "regretful"
+        ],
+        "energyLevel": 5,
+        "explicit": true
+    },
+    {
+        "id": 111,
+        "title": "Nights",
+        "artist": "Frank Ocean",
+        "album": "Blonde",
+        "releaseDate": "2016-08-20",
+        "genre": "Alternative R&B",
+        "bpm": 123,
+        "duration": "5:07",
+        "mood": [
+            "reflective",
+            "transformative",
+            "dynamic"
+        ],
+        "energyLevel": 6,
+        "explicit": true
+    },
+    {
+        "id": 112,
+        "title": "Pink + White",
+        "artist": "Frank Ocean",
+        "album": "Blonde",
+        "releaseDate": "2016-08-20",
+        "genre": "Neo-Soul",
+        "bpm": 98,
+        "duration": "3:04",
+        "mood": [
+            "dreamy",
+            "peaceful",
+            "nostalgic"
+        ],
+        "energyLevel": 4,
+        "explicit": false
+    },
+    {
+        "id": 113,
+        "title": "Self Control",
+        "artist": "Frank Ocean",
+        "album": "Blonde",
+        "releaseDate": "2016-08-20",
+        "genre": "Alternative R&B",
+        "bpm": 66,
+        "duration": "4:09",
+        "mood": [
+            "yearning",
+            "vulnerable",
+            "melancholic"
+        ],
+        "energyLevel": 4,
+        "explicit": false
+    },
+    {
+        "id": 114,
+        "title": "Location",
+        "artist": "Khalid",
+        "album": "American Teen",
+        "releaseDate": "2016-07-31",
+        "genre": "Contemporary R&B",
+        "bpm": 132,
+        "duration": "3:19",
+        "mood": [
+            "smooth",
+            "romantic",
+            "laid-back"
+        ],
+        "energyLevel": 5,
+        "explicit": false
+    },
+    {
+        "id": 115,
+        "title": "Young Dumb & Broke",
+        "artist": "Khalid",
+        "album": "American Teen",
+        "releaseDate": "2017-03-03",
+        "genre": "Contemporary R&B",
+        "bpm": 90,
+        "duration": "3:22",
+        "mood": [
+            "carefree",
+            "nostalgic",
+            "youthful"
+        ],
+        "energyLevel": 6,
+        "explicit": false
+    },
+    {
+        "id": 116,
+        "title": "The Hills",
+        "artist": "The Weeknd",
+        "album": "Beauty Behind the Madness",
+        "releaseDate": "2015-05-27",
+        "genre": "Dark R&B",
+        "bpm": 113,
+        "duration": "4:02",
+        "mood": [
+            "dark",
+            "moody",
+            "intense"
+        ],
+        "energyLevel": 7,
+        "explicit": true
+    },
+    {
+        "id": 117,
+        "title": "Can't Feel My Face",
+        "artist": "The Weeknd",
+        "album": "Beauty Behind the Madness",
+        "releaseDate": "2015-06-08",
+        "genre": "Pop",
+        "bpm": 108,
+        "duration": "3:33",
+        "mood": [
+            "upbeat",
+            "euphoric",
+            "groovy"
+        ],
+        "energyLevel": 8,
+        "explicit": false
+    },
+    {
+        "id": 118,
+        "title": "Earned It",
+        "artist": "The Weeknd",
+        "album": "Beauty Behind the Madness",
+        "releaseDate": "2014-12-23",
+        "genre": "Contemporary R&B",
+        "bpm": 41,
+        "duration": "4:37",
+        "mood": [
+            "sensual",
+            "dramatic",
+            "romantic"
+        ],
+        "energyLevel": 4,
+        "explicit": false
+    },
+    {
+        "id": 119,
+        "title": "Die For You",
+        "artist": "The Weeknd",
+        "album": "Starboy",
+        "releaseDate": "2016-11-25",
+        "genre": "Electropop",
+        "bpm": 98,
+        "duration": "4:20",
+        "mood": [
+            "passionate",
+            "emotional",
+            "vulnerable"
+        ],
+        "energyLevel": 6,
+        "explicit": false
+    },
+    {
+        "id": 120,
+        "title": "Often",
+        "artist": "The Weeknd",
+        "album": "Beauty Behind the Madness",
+        "releaseDate": "2014-07-31",
+        "genre": "Dark R&B",
+        "bpm": 98,
+        "duration": "4:09",
+        "mood": [
+            "sensual",
+            "dark",
+            "hypnotic"
+        ],
+        "energyLevel": 6,
+        "explicit": true
+    },
+    {
+        "id": 121,
+        "title": "Heat Waves",
+        "artist": "Glass Animals",
+        "album": "Dreamland",
+        "releaseDate": "2020-06-29",
+        "genre": "Indietronica",
+        "bpm": 80,
+        "duration": "3:58",
+        "mood": [
+            "melancholic",
+            "dreamy",
+            "nostalgic"
+        ],
+        "energyLevel": 5,
+        "explicit": false
+    },
+    {
+        "id": 122,
+        "title": "Gooey",
+        "artist": "Glass Animals",
+        "album": "Zaba",
+        "releaseDate": "2014-06-06",
+        "genre": "Psychedelic Pop",
+        "bpm": 84,
+        "duration": "4:37",
+        "mood": [
+            "hazy",
+            "sensual",
+            "hypnotic"
+        ],
+        "energyLevel": 4,
+        "explicit": false
+    },
+    {
+        "id": 123,
+        "title": "Black Mambo",
+        "artist": "Glass Animals",
+        "album": "Zaba",
+        "releaseDate": "2014-06-06",
+        "genre": "Psychedelic Pop",
+        "bpm": 95,
+        "duration": "4:26",
+        "mood": [
+            "mysterious",
+            "groovy",
+            "atmospheric"
+        ],
+        "energyLevel": 5,
+        "explicit": false
+    },
+    {
+        "id": 124,
+        "title": "Youth",
+        "artist": "Glass Animals",
+        "album": "How to Be a Human Being",
+        "releaseDate": "2016-08-26",
+        "genre": "Indietronica",
+        "bpm": 130,
+        "duration": "3:49",
+        "mood": [
+            "nostalgic",
+            "bittersweet",
+            "reflective"
+        ],
+        "energyLevel": 6,
+        "explicit": false
+    },
+    {
+        "id": 125,
+        "title": "Toxic",
+        "artist": "Britney Spears",
+        "album": "In the Zone",
+        "releaseDate": "2004-01-12",
+        "genre": "Dance-Pop",
+        "bpm": 143,
+        "duration": "3:19",
+        "mood": [
+            "seductive",
+            "energetic",
+            "intoxicating"
+        ],
+        "energyLevel": 8,
+        "explicit": false
+    },
+    {
+        "id": 126,
+        "title": "Gimme More",
+        "artist": "Britney Spears",
+        "album": "Blackout",
+        "releaseDate": "2007-09-27",
+        "genre": "Electropop",
+        "bpm": 110,
+        "duration": "4:11",
+        "mood": [
+            "seductive",
+            "hypnotic",
+            "club"
+        ],
+        "energyLevel": 7,
+        "explicit": false
+    },
+    {
+        "id": 127,
+        "title": "Everybody Wants to Rule the World",
+        "artist": "Tears for Fears",
+        "album": "Songs from the Big Chair",
+        "releaseDate": "1985-03-18",
+        "genre": "New Wave",
+        "bpm": 112,
+        "duration": "4:11",
+        "mood": [
+            "upbeat",
+            "anthemic",
+            "hopeful"
+        ],
+        "energyLevel": 7,
+        "explicit": false
+    },
+    {
+        "id": 128,
+        "title": "Sweet Dreams (Are Made of This)",
+        "artist": "Eurythmics",
+        "album": "Sweet Dreams (Are Made of This)",
+        "releaseDate": "1983-01-04",
+        "genre": "Synth-pop",
+        "bpm": 120,
+        "duration": "3:36",
+        "mood": [
+            "hypnotic",
+            "mysterious",
+            "powerful"
+        ],
+        "energyLevel": 7,
+        "explicit": false
+    },
+    {
+        "id": 129,
+        "title": "Don't Stop Believin'",
+        "artist": "Journey",
+        "album": "Escape",
+        "releaseDate": "1981-10-20",
+        "genre": "Arena Rock",
+        "bpm": 119,
+        "duration": "4:11",
+        "mood": [
+            "hopeful",
+            "anthemic",
+            "uplifting"
+        ],
+        "energyLevel": 8,
+        "explicit": false
+    },
+    {
+        "id": 130,
+        "title": "Livin' on a Prayer",
+        "artist": "Bon Jovi",
+        "album": "Slippery When Wet",
+        "releaseDate": "1986-08-18",
+        "genre": "Arena Rock",
+        "bpm": 123,
+        "duration": "4:09",
+        "mood": [
+            "triumphant",
+            "anthemic",
+            "hopeful"
+        ],
+        "energyLevel": 9,
+        "explicit": false
+    },
+    {
+        "id": 131,
+        "title": "Eye of the Tiger",
+        "artist": "Survivor",
+        "album": "Eye of the Tiger",
+        "releaseDate": "1982-05-29",
+        "genre": "Hard Rock",
+        "bpm": 109,
+        "duration": "4:04",
+        "mood": [
+            "determined",
+            "powerful",
+            "motivational"
+        ],
+        "energyLevel": 9,
+        "explicit": false
+    },
+    {
+        "id": 132,
+        "title": "We Will Rock You",
+        "artist": "Queen",
+        "album": "News of the World",
+        "releaseDate": "1977-10-07",
+        "genre": "Arena Rock",
+        "bpm": 81,
+        "duration": "2:02",
+        "mood": [
+            "powerful",
+            "anthemic",
+            "defiant"
+        ],
+        "energyLevel": 8,
+        "explicit": false
+    },
+    {
+        "id": 133,
+        "title": "We Are the Champions",
+        "artist": "Queen",
+        "album": "News of the World",
+        "releaseDate": "1977-10-07",
+        "genre": "Arena Rock",
+        "bpm": 63,
+        "duration": "2:59",
+        "mood": [
+            "triumphant",
+            "anthemic",
+            "proud"
+        ],
+        "energyLevel": 7,
+        "explicit": false
+    },
+    {
+        "id": 134,
+        "title": "Under Pressure",
+        "artist": "Queen & David Bowie",
+        "album": "Hot Space",
+        "releaseDate": "1981-10-26",
+        "genre": "Art Rock",
+        "bpm": 114,
+        "duration": "4:08",
+        "mood": [
+            "urgent",
+            "passionate",
+            "dramatic"
+        ],
+        "energyLevel": 8,
+        "explicit": false
+    },
+    {
+        "id": 135,
+        "title": "Somebody to Love",
+        "artist": "Queen",
+        "album": "A Day at the Races",
+        "releaseDate": "1976-11-12",
+        "genre": "Gospel Rock",
+        "bpm": 158,
+        "duration": "4:56",
+        "mood": [
+            "yearning",
+            "passionate",
+            "gospel"
+        ],
+        "energyLevel": 8,
+        "explicit": false
+    },
+    {
+        "id": 136,
+        "title": "Don't Stop Me Now",
+        "artist": "Queen",
+        "album": "Jazz",
+        "releaseDate": "1978-10-26",
+        "genre": "Glam Rock",
+        "bpm": 156,
+        "duration": "3:29",
+        "mood": [
+            "euphoric",
+            "exuberant",
+            "joyful"
+        ],
+        "energyLevel": 10,
+        "explicit": false
+    },
+    {
+        "id": 137,
+        "title": "Killer Queen",
+        "artist": "Queen",
+        "album": "Sheer Heart Attack",
+        "releaseDate": "1974-10-11",
+        "genre": "Glam Rock",
+        "bpm": 140,
+        "duration": "3:01",
+        "mood": [
+            "sophisticated",
+            "playful",
+            "theatrical"
+        ],
+        "energyLevel": 7,
+        "explicit": false
+    },
+    {
+        "id": 138,
+        "title": "Roxanne",
+        "artist": "The Police",
+        "album": "Outlandos d'Amour",
+        "releaseDate": "1978-11-03",
+        "genre": "Reggae Rock",
+        "bpm": 132,
+        "duration": "3:12",
+        "mood": [
+            "passionate",
+            "desperate",
+            "rhythmic"
+        ],
+        "energyLevel": 7,
+        "explicit": false
+    },
+    {
+        "id": 139,
+        "title": "Every Breath You Take",
+        "artist": "The Police",
+        "album": "Synchronicity",
+        "releaseDate": "1983-05-20",
+        "genre": "New Wave",
+        "bpm": 117,
+        "duration": "4:13",
+        "mood": [
+            "obsessive",
+            "melancholic",
+            "haunting"
+        ],
+        "energyLevel": 5,
+        "explicit": false
+    },
+    {
+        "id": 140,
+        "title": "Message in a Bottle",
+        "artist": "The Police",
+        "album": "Reggatta de Blanc",
+        "releaseDate": "1979-09-21",
+        "genre": "Reggae Rock",
+        "bpm": 150,
+        "duration": "4:51",
+        "mood": [
+            "isolated",
+            "urgent",
+            "hopeful"
+        ],
+        "energyLevel": 8,
+        "explicit": false
+    },
+    {
+        "id": 141,
+        "title": "With or Without You",
+        "artist": "U2",
+        "album": "The Joshua Tree",
+        "releaseDate": "1987-03-09",
+        "genre": "Post-Punk",
+        "bpm": 110,
+        "duration": "4:56",
+        "mood": [
+            "yearning",
+            "emotional",
+            "epic"
+        ],
+        "energyLevel": 6,
+        "explicit": false
+    },
+    {
+        "id": 142,
+        "title": "Where the Streets Have No Name",
+        "artist": "U2",
+        "album": "The Joshua Tree",
+        "releaseDate": "1987-03-09",
+        "genre": "Post-Punk",
+        "bpm": 135,
+        "duration": "5:38",
+        "mood": [
+            "transcendent",
+            "anthemic",
+            "uplifting"
+        ],
+        "energyLevel": 8,
+        "explicit": false
+    },
+    {
+        "id": 143,
+        "title": "One",
+        "artist": "U2",
+        "album": "Achtung Baby",
+        "releaseDate": "1991-11-18",
+        "genre": "Alternative Rock",
+        "bpm": 88,
+        "duration": "4:36",
+        "mood": [
+            "melancholic",
+            "reflective",
+            "hopeful"
+        ],
+        "energyLevel": 5,
+        "explicit": false
+    },
+    {
+        "id": 144,
+        "title": "Sunday Bloody Sunday",
+        "artist": "U2",
+        "album": "War",
+        "releaseDate": "1983-02-28",
+        "genre": "Post-Punk",
+        "bpm": 103,
+        "duration": "4:40",
+        "mood": [
+            "angry",
+            "political",
+            "urgent"
+        ],
+        "energyLevel": 8,
+        "explicit": false
+    },
+    {
+        "id": 145,
+        "title": "Beautiful Day",
+        "artist": "U2",
+        "album": "All That You Can't Leave Behind",
+        "releaseDate": "2000-10-30",
+        "genre": "Alternative Rock",
+        "bpm": 136,
+        "duration": "4:08",
+        "mood": [
+            "uplifting",
+            "hopeful",
+            "anthemic"
+        ],
+        "energyLevel": 8,
+        "explicit": false
+    },
+    {
+        "id": 146,
+        "title": "Come as You Are",
+        "artist": "Nirvana",
+        "album": "Nevermind",
+        "releaseDate": "1991-09-24",
+        "genre": "Grunge",
+        "bpm": 120,
+        "duration": "3:39",
+        "mood": [
+            "apathetic",
+            "dark",
+            "hypnotic"
+        ],
+        "energyLevel": 6,
+        "explicit": false
+    },
+    {
+        "id": 147,
+        "title": "Lithium",
+        "artist": "Nirvana",
+        "album": "Nevermind",
+        "releaseDate": "1991-09-24",
+        "genre": "Grunge",
+        "bpm": 122,
+        "duration": "4:17",
+        "mood": [
+            "bipolar",
+            "intense",
+            "unstable"
+        ],
+        "energyLevel": 7,
+        "explicit": false
+    },
+    {
+        "id": 148,
+        "title": "Heart-Shaped Box",
+        "artist": "Nirvana",
+        "album": "In Utero",
+        "releaseDate": "1993-09-13",
+        "genre": "Grunge",
+        "bpm": 85,
+        "duration": "4:41",
+        "mood": [
+            "dark",
+            "anguished",
+            "heavy"
+        ],
+        "energyLevel": 7,
+        "explicit": false
+    },
+    {
+        "id": 149,
+        "title": "Black Hole Sun",
+        "artist": "Soundgarden",
+        "album": "Superunknown",
+        "releaseDate": "1994-03-08",
+        "genre": "Grunge",
+        "bpm": 104,
+        "duration": "5:18",
+        "mood": [
+            "surreal",
+            "dark",
+            "psychedelic"
+        ],
+        "energyLevel": 6,
+        "explicit": false
+    },
+    {
+        "id": 150,
+        "title": "Jeremy",
+        "artist": "Pearl Jam",
+        "album": "Ten",
+        "releaseDate": "1991-08-27",
+        "genre": "Grunge",
+        "bpm": 93,
+        "duration": "5:19",
+        "mood": [
+            "dark",
+            "intense",
+            "troubled"
+        ],
+        "energyLevel": 7,
+        "explicit": false
+    },
+    {
+        "id": 151,
+        "title": "Alive",
+        "artist": "Pearl Jam",
+        "album": "Ten",
+        "releaseDate": "1991-08-27",
+        "genre": "Grunge",
+        "bpm": 76,
+        "duration": "5:41",
+        "mood": [
+            "triumphant",
+            "defiant",
+            "emotional"
+        ],
+        "energyLevel": 7,
+        "explicit": false
+    },
+    {
+        "id": 152,
+        "title": "Even Flow",
+        "artist": "Pearl Jam",
+        "album": "Ten",
+        "releaseDate": "1991-08-27",
+        "genre": "Grunge",
+        "bpm": 144,
+        "duration": "4:53",
+        "mood": [
+            "gritty",
+            "powerful",
+            "intense"
+        ],
+        "energyLevel": 8,
+        "explicit": false
+    },
+    {
+        "id": 153,
+        "title": "Man in the Box",
+        "artist": "Alice in Chains",
+        "album": "Facelift",
+        "releaseDate": "1990-08-21",
+        "genre": "Grunge",
+        "bpm": 107,
+        "duration": "4:46",
+        "mood": [
+            "dark",
+            "heavy",
+            "oppressive"
+        ],
+        "energyLevel": 7,
+        "explicit": false
+    },
+    {
+        "id": 154,
+        "title": "Rooster",
+        "artist": "Alice in Chains",
+        "album": "Dirt",
+        "releaseDate": "1992-09-29",
+        "genre": "Grunge",
+        "bpm": 98,
+        "duration": "6:15",
+        "mood": [
+            "haunting",
+            "heavy",
+            "war-torn"
+        ],
+        "energyLevel": 6,
+        "explicit": false
+    },
+    {
+        "id": 155,
+        "title": "Would?",
+        "artist": "Alice in Chains",
+        "album": "Dirt",
+        "releaseDate": "1992-09-29",
+        "genre": "Grunge",
+        "bpm": 108,
+        "duration": "3:28",
+        "mood": [
+            "dark",
+            "heavy",
+            "questioning"
+        ],
+        "energyLevel": 7,
+        "explicit": false
+    },
+    {
+        "id": 156,
+        "title": "No Scrubs",
+        "artist": "TLC",
+        "album": "FanMail",
+        "releaseDate": "1999-02-02",
+        "genre": "Contemporary R&B",
+        "bpm": 92,
+        "duration": "3:35",
+        "mood": [
+            "confident",
+            "sassy",
+            "empowered"
+        ],
+        "energyLevel": 6,
+        "explicit": false
+    },
+    {
+        "id": 157,
+        "title": "Waterfalls",
+        "artist": "TLC",
+        "album": "CrazySexyCool",
+        "releaseDate": "1994-11-15",
+        "genre": "Contemporary R&B",
+        "bpm": 88,
+        "duration": "4:39",
+        "mood": [
+            "cautionary",
+            "smooth",
+            "reflective"
+        ],
+        "energyLevel": 5,
+        "explicit": false
+    },
+    {
+        "id": 158,
+        "title": "Kiss from a Rose",
+        "artist": "Seal",
+        "album": "Seal II",
+        "releaseDate": "1994-07-24",
+        "genre": "Soul",
+        "bpm": 88,
+        "duration": "4:48",
+        "mood": [
+            "romantic",
+            "dramatic",
+            "theatrical"
+        ],
+        "energyLevel": 6,
+        "explicit": false
+    },
+    {
+        "id": 159,
+        "title": "Wonderwall",
+        "artist": "Ryan Adams",
+        "album": "Love Is Hell",
+        "releaseDate": "2003-11-04",
+        "genre": "Alternative Country",
+        "bpm": 88,
+        "duration": "4:25",
+        "mood": [
+            "melancholic",
+            "intimate",
+            "tender"
+        ],
+        "energyLevel": 4,
+        "explicit": false
+    },
+    {
+        "id": 160,
+        "title": "Torn",
+        "artist": "Natalie Imbruglia",
+        "album": "Left of the Middle",
+        "releaseDate": "1997-10-27",
+        "genre": "Pop Rock",
+        "bpm": 104,
+        "duration": "4:04",
+        "mood": [
+            "heartbroken",
+            "conflicted",
+            "vulnerable"
+        ],
+        "energyLevel": 6,
+        "explicit": false
+    },
+    {
+        "id": 161,
+        "title": "I Will Always Love You",
+        "artist": "Whitney Houston",
+        "album": "The Bodyguard OST",
+        "releaseDate": "1992-11-03",
+        "genre": "Soul Pop",
+        "bpm": 67,
+        "duration": "4:31",
+        "mood": [
+            "powerful",
+            "emotional",
+            "romantic"
+        ],
+        "energyLevel": 7,
+        "explicit": false
+    },
+    {
+        "id": 162,
+        "title": "Unwritten",
+        "artist": "Natasha Bedingfield",
+        "album": "Unwritten",
+        "releaseDate": "2004-09-13",
+        "genre": "Pop Rock",
+        "bpm": 98,
+        "duration": "4:19",
+        "mood": [
+            "empowering",
+            "uplifting",
+            "hopeful"
+        ],
+        "energyLevel": 7,
+        "explicit": false
+    },
+    {
+        "id": 163,
+        "title": "Poker Face",
+        "artist": "Lady Gaga",
+        "album": "The Fame",
+        "releaseDate": "2008-09-23",
+        "genre": "Electropop",
+        "bpm": 120,
+        "duration": "3:57",
+        "mood": [
+            "confident",
+            "mysterious",
+            "club"
+        ],
+        "energyLevel": 8,
+        "explicit": false
+    },
+    {
+        "id": 164,
+        "title": "Bad Romance",
+        "artist": "Lady Gaga",
+        "album": "The Fame Monster",
+        "releaseDate": "2009-10-26",
+        "genre": "Electropop",
+        "bpm": 119,
+        "duration": "4:54",
+        "mood": [
+            "intense",
+            "dramatic",
+            "passionate"
+        ],
+        "energyLevel": 9,
+        "explicit": false
+    },
+    {
+        "id": 165,
+        "title": "Shallow",
+        "artist": "Lady Gaga & Bradley Cooper",
+        "album": "A Star Is Born OST",
+        "releaseDate": "2018-09-27",
+        "genre": "Country Rock",
+        "bpm": 96,
+        "duration": "3:35",
+        "mood": [
+            "yearning",
+            "powerful",
+            "emotional"
+        ],
+        "energyLevel": 7,
+        "explicit": false
+    },
+    {
+        "id": 166,
+        "title": "Rolling in the Deep",
+        "artist": "Adele",
+        "album": "21",
+        "releaseDate": "2010-11-29",
+        "genre": "Soul Pop",
+        "bpm": 105,
+        "duration": "3:48",
+        "mood": [
+            "angry",
+            "powerful",
+            "defiant"
+        ],
+        "energyLevel": 8,
+        "explicit": false
+    },
+    {
+        "id": 167,
+        "title": "Someone Like You",
+        "artist": "Adele",
+        "album": "21",
+        "releaseDate": "2011-01-24",
+        "genre": "Soul Pop",
+        "bpm": 67,
+        "duration": "4:45",
+        "mood": [
+            "heartbroken",
+            "vulnerable",
+            "bittersweet"
+        ],
+        "energyLevel": 4,
+        "explicit": false
+    },
+    {
+        "id": 168,
+        "title": "Hello",
+        "artist": "Adele",
+        "album": "25",
+        "releaseDate": "2015-10-23",
+        "genre": "Soul Pop",
+        "bpm": 79,
+        "duration": "4:55",
+        "mood": [
+            "regretful",
+            "powerful",
+            "emotional"
+        ],
+        "energyLevel": 6,
+        "explicit": false
+    },
+    {
+        "id": 169,
+        "title": "Set Fire to the Rain",
+        "artist": "Adele",
+        "album": "21",
+        "releaseDate": "2011-07-04",
+        "genre": "Soul Pop",
+        "bpm": 108,
+        "duration": "4:02",
+        "mood": [
+            "dramatic",
+            "passionate",
+            "powerful"
+        ],
+        "energyLevel": 7,
+        "explicit": false
+    },
+    {
+        "id": 170,
+        "title": "Stay With Me",
+        "artist": "Sam Smith",
+        "album": "In the Lonely Hour",
+        "releaseDate": "2014-04-14",
+        "genre": "Soul Pop",
+        "bpm": 84,
+        "duration": "2:52",
+        "mood": [
+            "desperate",
+            "vulnerable",
+            "pleading"
+        ],
+        "energyLevel": 5,
+        "explicit": false
+    },
+    {
+        "id": 171,
+        "title": "Stitches",
+        "artist": "Shawn Mendes",
+        "album": "Handwritten",
+        "releaseDate": "2015-03-16",
+        "genre": "Pop",
+        "bpm": 150,
+        "duration": "3:27",
+        "mood": [
+            "heartbroken",
+            "intense",
+            "anguished"
+        ],
+        "energyLevel": 7,
+        "explicit": false
+    },
+    {
+        "id": 172,
+        "title": "Shape of You",
+        "artist": "Ed Sheeran",
+        "album": "÷",
+        "releaseDate": "2017-01-06",
+        "genre": "Dancehall Pop",
+        "bpm": 96,
+        "duration": "3:53",
+        "mood": [
+            "flirty",
+            "groovy",
+            "upbeat"
+        ],
+        "energyLevel": 7,
+        "explicit": false
+    },
+    {
+        "id": 173,
+        "title": "Thinking Out Loud",
+        "artist": "Ed Sheeran",
+        "album": "x",
+        "releaseDate": "2014-06-24",
+        "genre": "Soul Pop",
+        "bpm": 79,
+        "duration": "4:41",
+        "mood": [
+            "romantic",
+            "tender",
+            "timeless"
+        ],
+        "energyLevel": 5,
+        "explicit": false
+    },
+    {
+        "id": 174,
+        "title": "Photograph",
+        "artist": "Ed Sheeran",
+        "album": "x",
+        "releaseDate": "2014-06-20",
+        "genre": "Folk Pop",
+        "bpm": 108,
+        "duration": "4:18",
+        "mood": [
+            "nostalgic",
+            "emotional",
+            "tender"
+        ],
+        "energyLevel": 5,
+        "explicit": false
+    },
+    {
+        "id": 175,
+        "title": "Perfect",
+        "artist": "Ed Sheeran",
+        "album": "÷",
+        "releaseDate": "2017-03-03",
+        "genre": "Pop Ballad",
+        "bpm": 95,
+        "duration": "4:23",
+        "mood": [
+            "romantic",
+            "tender",
+            "dreamy"
+        ],
+        "energyLevel": 4,
+        "explicit": false
+    },
+    {
+        "id": 176,
+        "title": "All of Me",
+        "artist": "John Legend",
+        "album": "Love in the Future",
+        "releaseDate": "2013-08-12",
+        "genre": "Soul Pop",
+        "bpm": 120,
+        "duration": "4:29",
+        "mood": [
+            "romantic",
+            "vulnerable",
+            "devoted"
+        ],
+        "energyLevel": 5,
+        "explicit": false
+    },
+    {
+        "id": 177,
+        "title": "Ordinary People",
+        "artist": "John Legend",
+        "album": "Get Lifted",
+        "releaseDate": "2004-12-28",
+        "genre": "Neo-Soul",
+        "bpm": 116,
+        "duration": "4:32",
+        "mood": [
+            "intimate",
+            "honest",
+            "reflective"
+        ],
+        "energyLevel": 4,
+        "explicit": false
+    },
+    {
+        "id": 178,
+        "title": "Love Yourself",
+        "artist": "Justin Bieber",
+        "album": "Purpose",
+        "releaseDate": "2015-11-09",
+        "genre": "Acoustic Pop",
+        "bpm": 100,
+        "duration": "3:53",
+        "mood": [
+            "dismissive",
+            "confident",
+            "bittersweet"
+        ],
+        "energyLevel": 5,
+        "explicit": false
+    },
+    {
+        "id": 179,
+        "title": "Sorry",
+        "artist": "Justin Bieber",
+        "album": "Purpose",
+        "releaseDate": "2015-10-22",
+        "genre": "Tropical House",
+        "bpm": 100,
+        "duration": "3:20",
+        "mood": [
+            "apologetic",
+            "upbeat",
+            "catchy"
+        ],
+        "energyLevel": 7,
+        "explicit": false
+    },
+    {
+        "id": 180,
+        "title": "What Do You Mean?",
+        "artist": "Justin Bieber",
+        "album": "Purpose",
+        "releaseDate": "2015-08-28",
+        "genre": "Tropical House",
+        "bpm": 125,
+        "duration": "3:26",
+        "mood": [
+            "confused",
+            "tropical",
+            "catchy"
+        ],
+        "energyLevel": 7,
+        "explicit": false
+    },
+    {
+        "id": 181,
+        "title": "Trap Queen",
+        "artist": "Fetty Wap",
+        "album": "Fetty Wap",
+        "releaseDate": "2014-12-15",
+        "genre": "Trap",
+        "bpm": 135,
+        "duration": "3:43",
+        "mood": [
+            "romantic",
+            "melodic",
+            "street"
+        ],
+        "energyLevel": 6,
+        "explicit": true
+    },
+    {
+        "id": 182,
+        "title": "Hotline Bling",
+        "artist": "Drake",
+        "album": "Views",
+        "releaseDate": "2015-07-31",
+        "genre": "R&B",
+        "bpm": 135,
+        "duration": "4:27",
+        "mood": [
+            "melancholic",
+            "smooth",
+            "nostalgic"
+        ],
+        "energyLevel": 5,
+        "explicit": false
+    },
+    {
+        "id": 183,
+        "title": "God's Plan",
+        "artist": "Drake",
+        "album": "Scorpion",
+        "releaseDate": "2018-01-19",
+        "genre": "Hip-Hop",
+        "bpm": 77,
+        "duration": "3:19",
+        "mood": [
+            "reflective",
+            "triumphant",
+            "confident"
+        ],
+        "energyLevel": 6,
+        "explicit": true
+    },
+    {
+        "id": 184,
+        "title": "One Dance",
+        "artist": "Drake",
+        "album": "Views",
+        "releaseDate": "2016-04-05",
+        "genre": "Afrobeats",
+        "bpm": 104,
+        "duration": "2:54",
+        "mood": [
+            "smooth",
+            "tropical",
+            "romantic"
+        ],
+        "energyLevel": 6,
+        "explicit": false
+    },
+    {
+        "id": 185,
+        "title": "In My Feelings",
+        "artist": "Drake",
+        "album": "Scorpion",
+        "releaseDate": "2018-06-29",
+        "genre": "Bounce",
+        "bpm": 81,
+        "duration": "3:37",
+        "mood": [
+            "playful",
+            "nostalgic",
+            "groovy"
+        ],
+        "energyLevel": 7,
+        "explicit": true
+    },
+    {
+        "id": 186,
+        "title": "Nice for What",
+        "artist": "Drake",
+        "album": "Scorpion",
+        "releaseDate": "2018-04-06",
+        "genre": "Bounce",
+        "bpm": 100,
+        "duration": "3:30",
+        "mood": [
+            "empowering",
+            "upbeat",
+            "celebratory"
+        ],
+        "energyLevel": 8,
+        "explicit": true
+    },
+    {
+        "id": 187,
+        "title": "Passionfruit",
+        "artist": "Drake",
+        "album": "More Life",
+        "releaseDate": "2017-03-18",
+        "genre": "UK Funky",
+        "bpm": 110,
+        "duration": "4:59",
+        "mood": [
+            "melancholic",
+            "smooth",
+            "tropical"
+        ],
+        "energyLevel": 4,
+        "explicit": false
+    },
+    {
+        "id": 188,
+        "title": "Rockstar",
+        "artist": "Post Malone ft. 21 Savage",
+        "album": "Beerbongs & Bentleys",
+        "releaseDate": "2017-09-15",
+        "genre": "Trap",
+        "bpm": 160,
+        "duration": "3:38",
+        "mood": [
+            "dark",
+            "swagger",
+            "hypnotic"
+        ],
+        "energyLevel": 6,
+        "explicit": true
+    },
+    {
+        "id": 189,
+        "title": "Better Now",
+        "artist": "Post Malone",
+        "album": "Beerbongs & Bentleys",
+        "releaseDate": "2018-04-27",
+        "genre": "Pop Rap",
+        "bpm": 145,
+        "duration": "3:51",
+        "mood": [
+            "melancholic",
+            "reflective",
+            "bittersweet"
+        ],
+        "energyLevel": 5,
+        "explicit": true
+    },
+    {
+        "id": 190,
+        "title": "Congratulations",
+        "artist": "Post Malone ft. Quavo",
+        "album": "Stoney",
+        "releaseDate": "2016-11-04",
+        "genre": "Hip-Hop",
+        "bpm": 123,
+        "duration": "3:40",
+        "mood": [
+            "confident",
+            "triumphant",
+            "celebratory"
+        ],
+        "energyLevel": 7,
+        "explicit": true
+    },
+    {
+        "id": 191,
+        "title": "White Iverson",
+        "artist": "Post Malone",
+        "album": "Stoney",
+        "releaseDate": "2015-08-14",
+        "genre": "Hip-Hop",
+        "bpm": 127,
+        "duration": "4:16",
+        "mood": [
+            "smooth",
+            "confident",
+            "laid-back"
+        ],
+        "energyLevel": 5,
+        "explicit": true
+    },
+    {
+        "id": 192,
+        "title": "Goosebumps",
+        "artist": "Travis Scott",
+        "album": "Birds in the Trap Sing McKnight",
+        "releaseDate": "2016-09-02",
+        "genre": "Trap",
+        "bpm": 130,
+        "duration": "4:03",
+        "mood": [
+            "hypnotic",
+            "atmospheric",
+            "dark"
+        ],
+        "energyLevel": 7,
+        "explicit": true
+    },
+    {
+        "id": 193,
+        "title": "HIGHEST IN THE ROOM",
+        "artist": "Travis Scott",
+        "album": "Single",
+        "releaseDate": "2019-10-04",
+        "genre": "Trap",
+        "bpm": 130,
+        "duration": "2:55",
+        "mood": [
+            "intoxicated",
+            "hypnotic",
+            "atmospheric"
+        ],
+        "energyLevel": 6,
+        "explicit": true
+    },
+    {
+        "id": 194,
+        "title": "ANTIDOTE",
+        "artist": "Travis Scott",
+        "album": "Rodeo",
+        "releaseDate": "2015-07-28",
+        "genre": "Trap",
+        "bpm": 138,
+        "duration": "4:22",
+        "mood": [
+            "intense",
+            "hypnotic",
+            "energetic"
+        ],
+        "energyLevel": 8,
+        "explicit": true
+    },
+    {
+        "id": 195,
+        "title": "DNA.",
+        "artist": "Kendrick Lamar",
+        "album": "DAMN.",
+        "releaseDate": "2017-04-14",
+        "genre": "Hip-Hop",
+        "bpm": 150,
+        "duration": "3:06",
+        "mood": [
+            "aggressive",
+            "intense",
+            "powerful"
+        ],
+        "energyLevel": 9,
+        "explicit": true
+    },
+    {
+        "id": 196,
+        "title": "LOYALTY.",
+        "artist": "Kendrick Lamar ft. Rihanna",
+        "album": "DAMN.",
+        "releaseDate": "2017-04-14",
+        "genre": "Hip-Hop",
+        "bpm": 138,
+        "duration": "3:47",
+        "mood": [
+            "questioning",
+            "bouncy",
+            "catchy"
+        ],
+        "energyLevel": 7,
+        "explicit": true
+    },
+    {
+        "id": 197,
+        "title": "Swimming Pools (Drank)",
+        "artist": "Kendrick Lamar",
+        "album": "good kid, m.A.A.d city",
+        "releaseDate": "2012-07-31",
+        "genre": "Hip-Hop",
+        "bpm": 100,
+        "duration": "5:13",
+        "mood": [
+            "dark",
+            "introspective",
+            "hypnotic"
+        ],
+        "energyLevel": 6,
+        "explicit": true
+    },
+    {
+        "id": 198,
+        "title": "m.A.A.d city",
+        "artist": "Kendrick Lamar",
+        "album": "good kid, m.A.A.d city",
+        "releaseDate": "2012-10-22",
+        "genre": "Hip-Hop",
+        "bpm": 95,
+        "duration": "5:50",
+        "mood": [
+            "aggressive",
+            "intense",
+            "cinematic"
+        ],
+        "energyLevel": 9,
+        "explicit": true
+    },
+    {
+        "id": 199,
+        "title": "Money Trees",
+        "artist": "Kendrick Lamar",
+        "album": "good kid, m.A.A.d city",
+        "releaseDate": "2012-10-22",
+        "genre": "Hip-Hop",
+        "bpm": 73,
+        "duration": "6:26",
+        "mood": [
+            "smooth",
+            "reflective",
+            "atmospheric"
+        ],
+        "energyLevel": 5,
+        "explicit": true
+    },
+    {
+        "id": 200,
+        "title": "Alright",
+        "artist": "Kendrick Lamar",
+        "album": "To Pimp a Butterfly",
+        "releaseDate": "2015-03-15",
+        "genre": "Jazz Rap",
+        "bpm": 92,
+        "duration": "3:39",
+        "mood": [
+            "hopeful",
+            "defiant",
+            "uplifting"
+        ],
+        "energyLevel": 7,
+        "explicit": true
+    }
+]
