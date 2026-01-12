@@ -20,11 +20,12 @@
         Your browser does not support HTML5 video.
     </video>
 
+    <!-- all filters somewhat work -->
     <h6 class="title">Yours Truly, Rishabh Rohira</h6>
     <div id="app">
         <h1>Welcome to J<span><img
                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcz9AtjjSFrcne-fYJlNKanPDq7lBvk1MXTg&s"
-                    alt="Play Icon" class="play-icon"></span>mstack!</h1>
+                    alt="Play Icon" class="play-icon" aria-hidden="true"></span>mstack!</h1>
         <h2>What's on your mind today?</h2>
         <div class="events-and-data">
             <div class="input-section">
@@ -37,31 +38,39 @@
             </ul>
 
             <div id="playlist-container">
-                <div class="filter-section">
-                    <label for="bpm-filter">Filter by BPM:</label>
-                    <div class="slidecontainer">
-                        <input type="range" min="1" max="171" value="85" class="slider" id="myRange">
-                    </div>
-                </div>
-
                 <div class="scrollable-info">
                     <p id="song-count">Total Songs: 0</p>
                     <p id="total-duration">Total Duration: 0 mins</p>
                 </div>
             </div>
-            <div class="button-container">
-                <div class="song-section">
-                    <button id="add-song-button">Add Song</button>
-                    <button id="remove-song-button">Remove Song</button>
-                    <br>
-                    <a href="#all-songs.html" id="view-all-songs">View All Songs</a>
+            <div class="playlist-buttons">
+                <button id="clear-playlist-button">Clear Playlist</button>
+                <button id="save-playlist-button">Save Playlist</button>
+            </div>
+
+            <div class="filter-section">
+                <div style="display: flex; align-items: center; justify-content: center; gap: 1em; margin-bottom: 1em;">
+                    <span style="font-family: 'Rubik Wet Paint', system-ui; color: #bfbfbf;">Filtering:</span>
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="filter-toggle" checked>
+                        <span class="toggle-slider"></span>
+                    </label>
                 </div>
 
-                <div class="playlist-section">
-                    <button id="generate-playlist-button">Generate Playlist</button>
-                    <button id="clear-playlist-button">Clear Playlist</button>
-                    <button id="save-playlist-button">Save Playlist</button>
+
+                <label for="bpm-slider" style="font-family: 'Rubik Wet Paint', system-ui; color: #ff6f61;">Filter by
+                    BPM:</label>
+                <div class="slider-container">
+                    <input type="range" min="60" max="200" value="100" class="slider" id="bpm-slider">
+                    <p style="margin-top: 10px; font-family: sans-serif; font-size: 1.2rem;">
+                        Current: <span id="bpm-display" style="color: #ff6f61; font-weight: bold;">100</span> BPM
+                        <span style="font-size: 0.8rem; color: #888;">(Shows songs in +/- 20 BPM range)</span>
+                    </p>
                 </div>
+            </div>
+
+            <h2 style="margin-top: 1em; border-top: 1px solid #444; padding-top: 1em;">Song Library</h2>
+            <div id="library-container">
             </div>
         </div>
         <script src="script.js"></script>
