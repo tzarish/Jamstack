@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="/media/favicon.png" type="image/x-icon">
 </head>
 
 <body>
@@ -20,13 +22,12 @@
         Your browser does not support HTML5 video.
     </video>
 
-    <!-- all filters somewhat work -->
     <h6 class="title">Yours Truly, Rishabh Rohira</h6>
     <div id="app">
         <h1>Welcome to J<span><img
                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcz9AtjjSFrcne-fYJlNKanPDq7lBvk1MXTg&s"
                     alt="Play Icon" class="play-icon" aria-hidden="true"></span>mstack!</h1>
-        <h2>What's on your mind today?</h2>
+        <h2 class="subtitle"></h2>
         <div class="events-and-data">
             <div class="input-section">
                 <input type="text" id="song-input" placeholder="Enter song name or artist...">
@@ -34,8 +35,7 @@
 
             <h3>Your Playlist:</h3>
 
-            <ul id="playlist">
-            </ul>
+            <div id="playlist-grid"></div>
 
             <div id="playlist-container">
                 <div class="scrollable-info">
@@ -49,16 +49,19 @@
             </div>
 
             <div class="filter-section">
-                <div style="display: flex; align-items: center; justify-content: center; gap: 1em; margin-bottom: 1em;">
-                    <span style="font-family: 'Rubik Wet Paint', system-ui; color: #bfbfbf;">Filtering:</span>
+                <div
+                    style="display: flex; align-items: center; justify-content: center; gap: 1em; margin-bottom: 2em; font-size: 2rem;">
+                    <span style="font-family: 'Rubik Wet Paint', system-ui; color: #bfbfbf;">Filtering (Search and Slider toggle):</span>
                     <label class="toggle-switch">
                         <input type="checkbox" id="filter-toggle" checked>
                         <span class="toggle-slider"></span>
                     </label>
+                    <span id="filter-status"
+                        style="font-family: sans-serif; font-weight: bold; color: #00881b;">ON</span>
                 </div>
 
 
-                <label for="bpm-slider" style="font-family: 'Rubik Wet Paint', system-ui; color: #ff6f61;">Filter by
+                <label id="filter-label" for="bpm-slider" style="font-family: 'Rubik Wet Paint', system-ui; color: #ff6f61;">Filter by
                     BPM:</label>
                 <div class="slider-container">
                     <input type="range" min="60" max="200" value="100" class="slider" id="bpm-slider">
