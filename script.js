@@ -24,10 +24,22 @@ function onDomReady() {
     const saveBtn = document.getElementById('save-playlist-button');
     const filterToggle = document.getElementById('filter-toggle');
     const filterStatus = document.getElementById('filter-status');
-    
+
     let filterLabel = document.getElementById('filter-label');
     let sliderContainer = document.querySelector('.slider-container');
     let inputSection = document.querySelector('.input-section');
+
+    if (sliderContainer) {
+        sliderContainer.style.display = 'none';
+    }
+
+    if (filterLabel) {
+        filterLabel.style.display = 'none';
+    }
+
+    if (inputSection) {
+        inputSection.style.display = 'none';
+    }
 
     loadPlaylistFromStorage();
     loadSongsXHR();
@@ -44,16 +56,16 @@ function onDomReady() {
         if (this.checked) {
             filterStatus.textContent = 'ON';
             filterStatus.style.color = '#00881b';
-            if(sliderContainer) sliderContainer.style.display = 'block';
-            if(filterLabel) filterLabel.style.display = 'block';
-            if(inputSection) inputSection.style.display = 'block';
+            if (sliderContainer) sliderContainer.style.display = 'block';
+            if (filterLabel) filterLabel.style.display = 'block';
+            if (inputSection) inputSection.style.display = 'block';
             filterSongs();
         } else {
             filterStatus.textContent = 'OFF';
             filterStatus.style.color = '#ff6f61';
-            if(sliderContainer) sliderContainer.style.display = 'none';
-            if(filterLabel) filterLabel.style.display = 'none';
-            if(inputSection) inputSection.style.display = 'none';
+            if (sliderContainer) sliderContainer.style.display = 'none';
+            if (filterLabel) filterLabel.style.display = 'none';
+            if (inputSection) inputSection.style.display = 'none';
             renderLibrary(songData);
         }
     });

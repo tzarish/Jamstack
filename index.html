@@ -51,17 +51,18 @@
             <div class="filter-section">
                 <div
                     style="display: flex; align-items: center; justify-content: center; gap: 1em; margin-bottom: 2em; font-size: 2rem;">
-                    <span style="font-family: 'Rubik Wet Paint', system-ui; color: #bfbfbf;">Filtering (Search and Slider toggle):</span>
+                    <span style="font-family: 'Rubik Wet Paint', system-ui; color: #bfbfbf;">Filtering:</span>
                     <label class="toggle-switch">
-                        <input type="checkbox" id="filter-toggle" checked>
+                        <input type="checkbox" id="filter-toggle">
                         <span class="toggle-slider"></span>
                     </label>
                     <span id="filter-status"
-                        style="font-family: sans-serif; font-weight: bold; color: #00881b;">ON</span>
+                        style="font-family: sans-serif; font-weight: bold; color: #ff6f61;">OFF</span>
                 </div>
 
 
-                <label id="filter-label" for="bpm-slider" style="font-family: 'Rubik Wet Paint', system-ui; color: #ff6f61;">Filter by
+                <label id="filter-label" for="bpm-slider"
+                    style="font-family: 'Rubik Wet Paint', system-ui; color: #ff6f61;">Filter by
                     BPM:</label>
                 <div class="slider-container">
                     <input type="range" min="60" max="200" value="100" class="slider" id="bpm-slider">
