@@ -12,7 +12,10 @@ function onDomReady() {
 
     let songData = [];
     let playlist = [];
+    let songMetadata = {};
     const STORAGE_KEY = 'jamstack_user_playlist';
+    const METADATA_KEY = 'jamstack_song_metadata';
+    const CUSTOM_SONGS_KEY = 'jamstack_custom_songs';
 
     const libraryContainer = document.getElementById('library-container');
     const songCountEl = document.getElementById('song-count');
@@ -22,53 +25,68 @@ function onDomReady() {
     const searchInput = document.getElementById('song-input');
     const clearBtn = document.getElementById('clear-playlist-button');
     const saveBtn = document.getElementById('save-playlist-button');
-    const filterToggle = document.getElementById('filter-toggle');
-    const filterStatus = document.getElementById('filter-status');
+    
+    const searchToggle = document.getElementById('search-toggle');
+    const searchStatus = document.getElementById('search-status');
+    const searchSection = document.getElementById('search-section');
+    
+    const bpmToggle = document.getElementById('bpm-toggle');
+    const bpmStatus = document.getElementById('bpm-status');
+    const bpmSection = document.getElementById('bpm-section');
+    const filterLabel = document.getElementById('filter-label');
 
-    let filterLabel = document.getElementById('filter-label');
-    let sliderContainer = document.querySelector('.slider-container');
-    let inputSection = document.querySelector('.input-section');
-
-    if (sliderContainer) {
-        sliderContainer.style.display = 'none';
-    }
-
-    if (filterLabel) {
-        filterLabel.style.display = 'none';
-    }
-
-    if (inputSection) {
-        inputSection.style.display = 'none';
-    }
+    const toggleFormBtn = document.getElementById('toggle-form-btn');
+    const addSongForm = document.getElementById('add-song-form');
 
     loadPlaylistFromStorage();
+    loadMetadataFromStorage();
     loadSongsXHR();
 
-    bpmSlider.oninput = function () {
-        const val = parseInt(this.value);
-        bpmDisplay.innerHTML = val;
+    searchToggle.addEventListener('change', function() {
+        if (this.checked) {
+            searchStatus.textContent = 'ON';
+            searchStatus.style.color = '#00881b';
+            searchSection.style.display = 'block';
+        } else {
+            searchStatus.textContent = 'OFF';
+            searchStatus.style.color = '#ff6f61';
+            searchSection.style.display = 'none';
+            searchInput.value = '';
+        }
+        filterSongs();
+    });
+
+    bpmToggle.addEventListener('change', function() {
+        if (this.checked) {
+            bpmStatus.textContent = 'ON';
+            bpmStatus.style.color = '#00881b';
+            bpmSection.style.display = 'block';
+            filterLabel.style.display = 'block';
+        } else {
+            bpmStatus.textContent = 'OFF';
+            bpmStatus.style.color = '#ff6f61';
+            bpmSection.style.display = 'none';
+            filterLabel.style.display = 'none';
+        }
+        filterSongs();
+    });
+
+    toggleFormBtn.addEventListener('click', function() {
+        if (addSongForm.style.display === 'none') {
+            addSongForm.style.display = 'block';
+            toggleFormBtn.textContent = 'Hide Form';
+        } else {
+            addSongForm.style.display = 'none';
+            toggleFormBtn.textContent = 'Show Form';
+        }
+    });
+
+    bpmSlider.oninput = function() {
+        bpmDisplay.innerHTML = this.value;
         filterSongs();
     };
 
     searchInput.addEventListener('input', filterSongs);
-
-    filterToggle.addEventListener('change', function () {
-        if (this.checked) {
-            filterStatus.textContent = 'ON';
-            filterStatus.style.color = '#00881b';
-            if (sliderContainer) sliderContainer.style.display = 'block';
-            if (filterLabel) filterLabel.style.display = 'block';
-            if (inputSection) inputSection.style.display = 'block';
-            filterSongs();
-        } else {
-            filterStatus.textContent = 'OFF';
-            filterStatus.style.color = '#ff6f61';
-            if (sliderContainer) sliderContainer.style.display = 'none';
-            if (filterLabel) filterLabel.style.display = 'none';
-            if (inputSection) inputSection.style.display = 'none';
-            renderLibrary(songData);
-        }
-    });
 
     clearBtn.addEventListener('click', () => {
         if (confirm("Clear your entire playlist?")) {
@@ -84,6 +102,7 @@ function onDomReady() {
             return;
         }
         localStorage.setItem(STORAGE_KEY, JSON.stringify(playlist));
+        localStorage.setItem(METADATA_KEY, JSON.stringify(songMetadata));
         alert('Playlist saved to your browser!');
     });
 
@@ -99,13 +118,42 @@ function onDomReady() {
         }
     }
 
+    function loadMetadataFromStorage() {
+        const saved = localStorage.getItem(METADATA_KEY);
+        if (saved) {
+            try {
+                songMetadata = JSON.parse(saved);
+            } catch (e) {
+                console.error("Failed to load metadata", e);
+            }
+        }
+    }
+
+    function saveCustomSongs() {
+        const customSongs = songData.filter(song => song.id > 200);
+        localStorage.setItem(CUSTOM_SONGS_KEY, JSON.stringify(customSongs));
+    }
+
+    function loadCustomSongs() {
+        const saved = localStorage.getItem(CUSTOM_SONGS_KEY);
+        if (saved) {
+            try {
+                const customSongs = JSON.parse(saved);
+                songData = songData.concat(customSongs);
+            } catch (e) {
+                console.error("Failed to load custom songs", e);
+            }
+        }
+    }
+
     function loadSongsXHR() {
         var xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function () {
+        xhttp.onreadystatechange = function() {
             if (this.readyState == 4) {
                 if (this.status == 200) {
                     try {
                         songData = JSON.parse(this.responseText);
+                        loadCustomSongs();
                         renderLibrary(songData);
                     } catch (e) {
                         console.error("Error parsing JSON:", e);
@@ -113,12 +161,12 @@ function onDomReady() {
                 } else {
                     console.error("Error loading file. Status:", this.status);
                     libraryContainer.innerHTML = `
-                                <div style="grid-column: 1/-1; text-align: center; padding: 2em; border: 1px solid #740a00;">
-                                    <h3 style="color: #ff6f61;">Error</h3>
-                                    <p>Could not load song-data.json.</p>
-                                    <p style="font-size:0.8rem; margin-top:10px;">Make sure you are running a Live Server.</p>
-                                </div>
-                            `;
+                        <div style="grid-column: 1/-1; text-align: center; padding: 2em; border: 1px solid #740a00;">
+                            <h3 style="color: #ff6f61;">Error</h3>
+                            <p>Could not load song-data.json.</p>
+                            <p style="font-size:0.8rem; margin-top:10px;">Make sure you are running a Live Server.</p>
+                        </div>
+                    `;
                 }
             }
         };
@@ -171,39 +219,76 @@ function onDomReady() {
         const sliderVal = parseInt(bpmSlider.value);
         const searchTerm = searchInput.value.toLowerCase();
         const bpmRange = 20;
-        const isFilterOn = filterToggle.checked;
+        const isSearchOn = searchToggle.checked;
+        const isBpmOn = bpmToggle.checked;
 
         const filteredPlaylist = playlist.filter(song => {
-            if (!isFilterOn) return true;
-            const bpmMatch = (song.bpm >= sliderVal - bpmRange) && (song.bpm <= sliderVal + bpmRange);
-            const searchMatch = song.title.toLowerCase().includes(searchTerm) ||
-                song.artist.toLowerCase().includes(searchTerm);
-            return bpmMatch && searchMatch;
+            let matches = true;
+            
+            if (isBpmOn) {
+                const bpmMatch = (song.bpm >= sliderVal - bpmRange) && (song.bpm <= sliderVal + bpmRange);
+                matches = matches && bpmMatch;
+            }
+            
+            if (isSearchOn && searchTerm) {
+                const searchMatch = song.title.toLowerCase().includes(searchTerm) ||
+                    song.artist.toLowerCase().includes(searchTerm);
+                matches = matches && searchMatch;
+            }
+            
+            return matches;
         });
 
-        filteredPlaylist.forEach((song) => {
+        filteredPlaylist.forEach((song, displayIndex) => {
+            const actualIndex = playlist.indexOf(song);
             const card = document.createElement('div');
             card.className = 'playlist-card song-card';
             const explicitBadge = song.explicit ? '<span style="color:#ff6f61; border:1px solid #ff6f61; padding:0 4px; font-size:0.7rem; border-radius:2px; margin-left:5px;">E</span>' : '';
             const moodHtml = song.mood ? song.mood.map(m => `<span class="mood-badge">${m}</span>`).join('') : '';
-            const actualIndex = playlist.indexOf(song);
+            
+            const metadata = songMetadata[song.id] || { status: 'planning', rating: 0 };
 
             card.innerHTML = `
-            <button class="remove-btn" onclick="window.removeFromPlaylist(${actualIndex})">✕</button>
-            <div class="card-header">
-                <div class="card-title">${song.title} ${explicitBadge}</div>
-                <div class="card-artist">${song.artist}</div>
-            </div>
-            <div class="card-meta">
-                <div class="meta-tag">🎵 ${song.genre}</div>
-                <div class="meta-tag">⏱ ${song.duration}</div>
-                <div class="meta-tag">💓 ${song.bpm} BPM</div>
-                <div class="meta-tag">⚡ ${song.energyLevel}/10</div>
-                <div class="meta-tag" style="grid-column: span 2;">💿 ${song.album} (${song.releaseDate})</div>
-            </div>
-            <div class="mood-tags">${moodHtml}</div>
-        `;
+                <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1em;">
+                    <div style="display: flex; gap: 0.5em;">
+                        <button class="move-btn" onclick="window.moveUp(${actualIndex})" ${actualIndex === 0 ? 'disabled' : ''} style="background: #740a00; color: white; border: none; padding: 0.3em 0.6em; border-radius: 4px; cursor: pointer; font-size: 0.9rem;">▲</button>
+                        <button class="move-btn" onclick="window.moveDown(${actualIndex})" ${actualIndex === playlist.length - 1 ? 'disabled' : ''} style="background: #740a00; color: white; border: none; padding: 0.3em 0.6em; border-radius: 4px; cursor: pointer; font-size: 0.9rem;">▼</button>
+                    </div>
+                    <button class="remove-btn" onclick="window.removeFromPlaylist(${actualIndex})">✕</button>
+                </div>
+                
+                <div class="card-header">
+                    <div class="card-title">${song.title} ${explicitBadge}</div>
+                    <div class="card-artist">${song.artist}</div>
+                </div>
+                
+                <div class="card-meta">
+                    <div class="meta-tag">🎵 ${song.genre}</div>
+                    <div class="meta-tag">⏱ ${song.duration}</div>
+                    <div class="meta-tag">💓 ${song.bpm} BPM</div>
+                    <div class="meta-tag">⚡ ${song.energyLevel}/10</div>
+                    <div class="meta-tag" style="grid-column: span 2;">💿 ${song.album} (${song.releaseDate})</div>
+                </div>
+                
+                <div class="mood-tags">${moodHtml}</div>
+                
+                <div style="margin-top: 1em; padding-top: 1em; border-top: 1px solid #444;">
+                    <label style="display: block; margin-bottom: 0.5em; color: #ff6f61; font-size: 0.9rem;">Status:</label>
+                    <select onchange="window.updateStatus(${song.id}, this.value)" style="width: 100%; padding: 0.5em; background: #1d1e22; color: white; border: 1px solid #740a00; border-radius: 4px; margin-bottom: 0.5em; font-family: inherit;">
+                        <option value="planning" ${metadata.status === 'planning' ? 'selected' : ''}>Planning to Listen</option>
+                        <option value="listened" ${metadata.status === 'listened' ? 'selected' : ''}>Listened</option>
+                    </select>
+                    
+                    <label style="display: block; margin-bottom: 0.5em; color: #ff6f61; font-size: 0.9rem;">Rating: ${metadata.rating}/5</label>
+                    <div style="display: flex; gap: 0.3em;">
+                        ${[1,2,3,4,5].map(star => `
+                            <button onclick="window.updateRating(${song.id}, ${star})" style="background: none; border: none; font-size: 1.5rem; cursor: pointer; color: ${star <= metadata.rating ? '#ffd700' : '#666'};">★</button>
+                        `).join('')}
+                    </div>
+                </div>
+            `;
             playlistGrid.appendChild(card);
+
             const parts = song.duration.split(':');
             totalSeconds += parseInt(parts[0]) * 60 + parseInt(parts[1]);
         });
@@ -213,7 +298,7 @@ function onDomReady() {
         const secs = totalSeconds % 60;
         totalDurationEl.innerText = `Total Duration: ${mins}m ${secs}s`;
 
-        if (isFilterOn && filteredPlaylist.length < playlist.length) {
+        if ((isSearchOn || isBpmOn) && filteredPlaylist.length < playlist.length) {
             const filterNote = document.createElement('div');
             filterNote.className = 'empty-playlist';
             filterNote.style.border = '2px solid #ff6f61';
@@ -223,25 +308,40 @@ function onDomReady() {
     }
 
     function filterSongs() {
-        if (!filterToggle.checked) {
+        const sliderVal = parseInt(bpmSlider.value);
+        const searchTerm = searchInput.value.toLowerCase();
+        const bpmRange = 20;
+        const isSearchOn = searchToggle.checked;
+        const isBpmOn = bpmToggle.checked;
+
+        if (!isSearchOn && !isBpmOn) {
             renderLibrary(songData);
             updatePlaylistUI();
             return;
         }
-        const sliderVal = parseInt(bpmSlider.value);
-        const searchTerm = searchInput.value.toLowerCase();
-        const bpmRange = 20;
+
         const filtered = songData.filter(song => {
-            const bpmMatch = (song.bpm >= sliderVal - bpmRange) && (song.bpm <= sliderVal + bpmRange);
-            const searchMatch = song.title.toLowerCase().includes(searchTerm) ||
-                song.artist.toLowerCase().includes(searchTerm);
-            return bpmMatch && searchMatch;
+            let matches = true;
+            
+            if (isBpmOn) {
+                const bpmMatch = (song.bpm >= sliderVal - bpmRange) && (song.bpm <= sliderVal + bpmRange);
+                matches = matches && bpmMatch;
+            }
+            
+            if (isSearchOn && searchTerm) {
+                const searchMatch = song.title.toLowerCase().includes(searchTerm) ||
+                    song.artist.toLowerCase().includes(searchTerm);
+                matches = matches && searchMatch;
+            }
+            
+            return matches;
         });
+
         renderLibrary(filtered);
         updatePlaylistUI();
     }
 
-    window.addToPlaylist = function (id) {
+    window.addToPlaylist = function(id) {
         const song = songData.find(s => s.id === id);
         if (song) {
             const exists = playlist.some(s => s.id === id);
@@ -250,11 +350,16 @@ function onDomReady() {
                 return;
             }
             playlist.push(song);
+            
+            if (!songMetadata[id]) {
+                songMetadata[id] = { status: 'planning', rating: 0 };
+            }
+            
             updatePlaylistUI();
         }
     };
 
-    window.removeFromPlaylist = function (index) {
+    window.removeFromPlaylist = function(index) {
         playlist.splice(index, 1);
         updatePlaylistUI();
     };
