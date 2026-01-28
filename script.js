@@ -18,6 +18,7 @@ function onDomReady() {
     const CUSTOM_SONGS_KEY = 'jamstack_custom_songs';
 
     const libraryContainer = document.getElementById('library-container');
+    const toggleLibraryBtn = document.getElementById('toggle-library-button');
     const songCountEl = document.getElementById('song-count');
     const totalDurationEl = document.getElementById('total-duration');
     const bpmSlider = document.getElementById('bpm-slider');
@@ -25,11 +26,11 @@ function onDomReady() {
     const searchInput = document.getElementById('song-input');
     const clearBtn = document.getElementById('clear-playlist-button');
     const saveBtn = document.getElementById('save-playlist-button');
-    
+
     const searchToggle = document.getElementById('search-toggle');
     const searchStatus = document.getElementById('search-status');
     const searchSection = document.getElementById('search-section');
-    
+
     const bpmToggle = document.getElementById('bpm-toggle');
     const bpmStatus = document.getElementById('bpm-status');
     const bpmSection = document.getElementById('bpm-section');
@@ -42,7 +43,7 @@ function onDomReady() {
     loadMetadataFromStorage();
     loadSongsXHR();
 
-    searchToggle.addEventListener('change', function() {
+    searchToggle.addEventListener('change', function () {
         if (this.checked) {
             searchStatus.textContent = 'ON';
             searchStatus.style.color = '#00881b';
@@ -56,7 +57,7 @@ function onDomReady() {
         filterSongs();
     });
 
-    bpmToggle.addEventListener('change', function() {
+    bpmToggle.addEventListener('change', function () {
         if (this.checked) {
             bpmStatus.textContent = 'ON';
             bpmStatus.style.color = '#00881b';
@@ -71,17 +72,7 @@ function onDomReady() {
         filterSongs();
     });
 
-    toggleFormBtn.addEventListener('click', function() {
-        if (addSongForm.style.display === 'none') {
-            addSongForm.style.display = 'block';
-            toggleFormBtn.textContent = 'Hide Form';
-        } else {
-            addSongForm.style.display = 'none';
-            toggleFormBtn.textContent = 'Show Form';
-        }
-    });
-
-    bpmSlider.oninput = function() {
+    bpmSlider.oninput = function () {
         bpmDisplay.innerHTML = this.value;
         filterSongs();
     };
@@ -148,26 +139,25 @@ function onDomReady() {
 
     function loadSongsXHR() {
         var xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
-            if (this.readyState == 4) {
-                if (this.status == 200) {
-                    try {
-                        songData = JSON.parse(this.responseText);
-                        loadCustomSongs();
-                        renderLibrary(songData);
-                    } catch (e) {
-                        console.error("Error parsing JSON:", e);
-                    }
-                } else {
-                    console.error("Error loading file. Status:", this.status);
-                    libraryContainer.innerHTML = `
+        xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                try {
+                    songData = JSON.parse(this.responseText);
+                    loadCustomSongs();
+                    renderLibrary(songData);
+                    libraryContainer.style.display = 'none';
+                } catch (e) {
+                    console.error("Error parsing JSON:", e);
+                }
+            } else {
+                console.error("Error loading file. Status:", this.status);
+                libraryContainer.innerHTML = `
                         <div style="grid-column: 1/-1; text-align: center; padding: 2em; border: 1px solid #740a00;">
                             <h3 style="color: #ff6f61;">Error</h3>
                             <p>Could not load song-data.json.</p>
                             <p style="font-size:0.8rem; margin-top:10px;">Make sure you are running a Live Server.</p>
                         </div>
                     `;
-                }
             }
         };
         xhttp.open("GET", "song-data.json", true);
@@ -204,6 +194,16 @@ function onDomReady() {
         });
     }
 
+    toggleLibraryBtn.addEventListener('click', function () {
+        if (libraryContainer.style.display === 'none') {
+            libraryContainer.style.display = 'grid';
+            toggleLibraryBtn.textContent = 'Hide Library';
+        } else {
+            libraryContainer.style.display = 'none';
+            toggleLibraryBtn.textContent = 'Show Library';
+        }
+    });
+
     function updatePlaylistUI() {
         const playlistGrid = document.getElementById('playlist-grid');
         playlistGrid.innerHTML = "";
@@ -224,18 +224,18 @@ function onDomReady() {
 
         const filteredPlaylist = playlist.filter(song => {
             let matches = true;
-            
+
             if (isBpmOn) {
                 const bpmMatch = (song.bpm >= sliderVal - bpmRange) && (song.bpm <= sliderVal + bpmRange);
                 matches = matches && bpmMatch;
             }
-            
+
             if (isSearchOn && searchTerm) {
                 const searchMatch = song.title.toLowerCase().includes(searchTerm) ||
                     song.artist.toLowerCase().includes(searchTerm);
                 matches = matches && searchMatch;
             }
-            
+
             return matches;
         });
 
@@ -245,7 +245,7 @@ function onDomReady() {
             card.className = 'playlist-card song-card';
             const explicitBadge = song.explicit ? '<span style="color:#ff6f61; border:1px solid #ff6f61; padding:0 4px; font-size:0.7rem; border-radius:2px; margin-left:5px;">E</span>' : '';
             const moodHtml = song.mood ? song.mood.map(m => `<span class="mood-badge">${m}</span>`).join('') : '';
-            
+
             const metadata = songMetadata[song.id] || { status: 'planning', rating: 0 };
 
             card.innerHTML = `
@@ -281,7 +281,7 @@ function onDomReady() {
                     
                     <label style="display: block; margin-bottom: 0.5em; color: #ff6f61; font-size: 0.9rem;">Rating: ${metadata.rating}/5</label>
                     <div style="display: flex; gap: 0.3em;">
-                        ${[1,2,3,4,5].map(star => `
+                        ${[1, 2, 3, 4, 5].map(star => `
                             <button onclick="window.updateRating(${song.id}, ${star})" style="background: none; border: none; font-size: 1.5rem; cursor: pointer; color: ${star <= metadata.rating ? '#ffd700' : '#666'};">★</button>
                         `).join('')}
                     </div>
@@ -322,18 +322,18 @@ function onDomReady() {
 
         const filtered = songData.filter(song => {
             let matches = true;
-            
+
             if (isBpmOn) {
                 const bpmMatch = (song.bpm >= sliderVal - bpmRange) && (song.bpm <= sliderVal + bpmRange);
                 matches = matches && bpmMatch;
             }
-            
+
             if (isSearchOn && searchTerm) {
                 const searchMatch = song.title.toLowerCase().includes(searchTerm) ||
                     song.artist.toLowerCase().includes(searchTerm);
                 matches = matches && searchMatch;
             }
-            
+
             return matches;
         });
 
@@ -341,7 +341,7 @@ function onDomReady() {
         updatePlaylistUI();
     }
 
-    window.addToPlaylist = function(id) {
+    window.addToPlaylist = function (id) {
         const song = songData.find(s => s.id === id);
         if (song) {
             const exists = playlist.some(s => s.id === id);
@@ -350,17 +350,84 @@ function onDomReady() {
                 return;
             }
             playlist.push(song);
-            
+
             if (!songMetadata[id]) {
                 songMetadata[id] = { status: 'planning', rating: 0 };
             }
-            
+
             updatePlaylistUI();
         }
     };
 
-    window.removeFromPlaylist = function(index) {
+    window.removeFromPlaylist = function (index) {
         playlist.splice(index, 1);
         updatePlaylistUI();
     };
+
+    window.updateStatus = function (songId, status) {
+        if (!songMetadata[songId]) {
+            songMetadata[songId] = { status: 'planning', rating: 0 };
+        }
+        songMetadata[songId].status = status;
+        localStorage.setItem(METADATA_KEY, JSON.stringify(songMetadata));
+    };
+
+    window.updateRating = function (songId, rating) {
+        if (!songMetadata[songId]) {
+            songMetadata[songId] = { status: 'planning', rating: 0 };
+        }
+        songMetadata[songId].rating = rating;
+        localStorage.setItem(METADATA_KEY, JSON.stringify(songMetadata));
+        updatePlaylistUI();
+    };
+
+    window.moveUp = function (index) {
+        if (index > 0) {
+            [playlist[index], playlist[index - 1]] = [playlist[index - 1], playlist[index]];
+            updatePlaylistUI();
+        }
+    };
+
+    window.moveDown = function (index) {
+        if (index < playlist.length - 1) {
+            [playlist[index], playlist[index + 1]] = [playlist[index + 1], playlist[index]];
+            updatePlaylistUI();
+        }
+    };
+
+    toggleFormBtn.addEventListener('click', function () {
+        if (addSongForm.style.display === 'none') {
+            addSongForm.style.display = 'block';
+            toggleFormBtn.textContent = 'Hide Form';
+        } else {
+            addSongForm.style.display = 'none';
+            toggleFormBtn.textContent = 'Show Form';
+        }
+    });
+
+    addSongForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const newSong = {
+            id: Date.now(),
+            title: document.getElementById('form-title').value,
+            artist: document.getElementById('form-artist').value,
+            album: document.getElementById('form-album').value,
+            releaseDate: document.getElementById('form-date').value,
+            genre: document.getElementById('form-genre').value,
+            bpm: parseInt(document.getElementById('form-bpm').value),
+            duration: document.getElementById('form-duration').value,
+            mood: document.getElementById('form-mood').value.split(',').map(m => m.trim()),
+            energyLevel: parseInt(document.getElementById('form-energy').value),
+            explicit: document.getElementById('form-explicit').checked
+        };
+
+        songData.push(newSong);
+        saveCustomSongs();
+        renderLibrary(songData);
+        addSongForm.reset();
+        addSongForm.style.display = 'none';
+        toggleFormBtn.textContent = 'Show Form';
+        alert('Song added successfully!');
+    });
 }
