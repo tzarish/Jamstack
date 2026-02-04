@@ -153,6 +153,44 @@ h6 {
     font-family: "Rubik Wet Paint", system-ui;
 }
 
+.subtitle {
+  font-size: 1.875rem;
+  margin-bottom: 2rem;
+  min-height: 3rem;
+  font-family: "Boldonse", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  text-shadow: 3px 3px 5px black;
+}
+
+.looking-for {
+  color: #ffd700;
+}
+
+.cursor {
+  animation: blink 1s infinite;
+}
+
+#typing-text {
+  font-size: 2rem;
+  font-family: "Courier New", Courier, monospace;
+}
+
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.events-and-data {
+    margin-top: 3em;
+}
+
 button {
     cursor: pointer;
     font-family: inherit;
@@ -261,6 +299,9 @@ h3 {
     height: 25px;
     background: #740a00;
     cursor: pointer;
+    border-radius: 15px;
+    background-image: url(https://e7.pngegg.com/pngimages/274/853/png-clipart-musical-note-icon-music-notes-miscellaneous-logo.png);
+    background-size: cover;
 }
 
 .slider::-moz-range-thumb {
@@ -491,4 +532,14 @@ h3 {
         grid-template-columns: 1fr;
         padding: 0 1em;
     }
+}
+
+.footer-text {
+    font-size: 1.5rem;
+}
+
+.footer {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 2em;
 }

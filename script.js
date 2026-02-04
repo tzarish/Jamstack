@@ -8,7 +8,55 @@ if (document.readyState === 'loading') {
 
 function onDomReady() {
     let subtitle = document.querySelector('.subtitle');
-    if (subtitle) subtitle.textContent = "What's on your mind today?";
+    if (subtitle) subtitle.textContent = "Our Signature Lyrics:";
+
+    function startSubtitleTyping() {
+        const typingText = document.getElementById('typing-text');
+
+        const textArray = [
+            "I can't sleep until I feel your touch",
+            "I would gladly break it, I would gladly break my heart for you",
+            "And each time you have a dream, you'll never know what it means",
+            "Don't play with her, don't be dishonest",
+            "I raise my flags, dye my clothes, It's a revolution I suppose",
+            "Why'd you come? You knew you should have stayed",
+            "Wish we could turn back time to the good old days"
+        ];
+
+        let loopNum = (Math.random() * textArray.length) | 0;
+        let isDeleting = false;
+        let text = "";
+
+        function type() {
+            const current = loopNum % textArray.length;
+            const fullText = textArray[current];
+
+            if (!isDeleting) {
+                text = fullText.substring(0, text.length + 1);
+                typingText.textContent = text;
+
+                if (text === fullText) {
+                    setTimeout(() => {
+                        isDeleting = true;
+                        type();
+                    }, 2000);
+                    return;
+                }
+            } else {
+                text = fullText.substring(0, text.length - 1);
+                typingText.textContent = text;
+
+                if (text === "") {
+                    isDeleting = false;
+                    loopNum++;
+                }
+            }
+            setTimeout(type, isDeleting ? 25 : 40);
+        }
+
+        type();
+    }
+    startSubtitleTyping();
 
     let songData = [];
     let playlist = [];
@@ -39,8 +87,9 @@ function onDomReady() {
     const toggleFormBtn = document.getElementById('toggle-form-btn');
     const addSongForm = document.getElementById('add-song-form');
 
-    loadPlaylistFromStorage();
     loadMetadataFromStorage();
+    loadPlaylistFromStorage();
+    updatePlaylistUI();
     loadSongsXHR();
 
     searchToggle.addEventListener('change', function () {
@@ -102,7 +151,6 @@ function onDomReady() {
         if (saved) {
             try {
                 playlist = JSON.parse(saved);
-                updatePlaylistUI();
             } catch (e) {
                 console.error("Failed to load saved playlist", e);
             }
@@ -151,18 +199,11 @@ function onDomReady() {
                 }
             } else {
                 console.error("Error loading file. Status:", this.status);
-                libraryContainer.innerHTML = `
-                        <div style="grid-column: 1/-1; text-align: center; padding: 2em; border: 1px solid #740a00;">
-                            <h3 style="color: #ff6f61;">Error</h3>
-                            <p>Could not load song-data.json.</p>
-                            <p style="font-size:0.8rem; margin-top:10px;">Make sure you are running a Live Server.</p>
-                        </div>
-                    `;
             }
         };
         xhttp.open("GET", "song-data.json", true);
         xhttp.send();
-    }
+    };
 
     function renderLibrary(songs) {
         libraryContainer.innerHTML = "";
