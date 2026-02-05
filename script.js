@@ -8,19 +8,24 @@ if (document.readyState === 'loading') {
 
 function onDomReady() {
     let subtitle = document.querySelector('.subtitle');
-    if (subtitle) subtitle.textContent = "Our Signature Lyrics:";
+    if (subtitle) subtitle.textContent = "Signature Lyrics:";
 
     function startSubtitleTyping() {
         const typingText = document.getElementById('typing-text');
 
         const textArray = [
             "I can't sleep until I feel your touch",
-            "I would gladly break it, I would gladly break my heart for you",
-            "And each time you have a dream, you'll never know what it means",
+            "I would gladly break my heart for you",
+            "Each time you have a dream, you'll never know what it means",
             "Don't play with her, don't be dishonest",
             "I raise my flags, dye my clothes, It's a revolution I suppose",
             "Why'd you come? You knew you should have stayed",
-            "Wish we could turn back time to the good old days"
+            "Wish we could turn back time to the good old days",
+            "I think of two young lovers running wild and free",
+            "Bless your heart, make you part of my life forever",
+            "So come on, come on, dark star, been loving you and I can't get enough",
+            "Don't love someone else, I want you all to myself",
+            "When I said that I love you, I meant that I love you forever"
         ];
 
         let loopNum = (Math.random() * textArray.length) | 0;
@@ -51,7 +56,7 @@ function onDomReady() {
                     loopNum++;
                 }
             }
-            setTimeout(type, isDeleting ? 25 : 40);
+            setTimeout(type, isDeleting ? 20 : 30);
         }
 
         type();
@@ -471,4 +476,18 @@ function onDomReady() {
         toggleFormBtn.textContent = 'Show Form';
         alert('Song added successfully!');
     });
+
+    let flickerText = document.querySelector('.flicker-text');
+    if (flickerText) {
+        flickerText.addEventListener('mouseover', function () {
+            flickerText.style.animationPlayState = 'paused';
+        });
+        flickerText.addEventListener('mouseout', function () {
+            flickerText.style.animationPlayState = 'running';
+        });
+
+        flickerText.addEventListener('click', function () {
+            alert('You found the secret flicker text! 🎉');
+        });
+    }
 }

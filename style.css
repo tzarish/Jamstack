@@ -154,37 +154,39 @@ h6 {
 }
 
 .subtitle {
-  font-size: 1.875rem;
-  margin-bottom: 2rem;
-  min-height: 3rem;
-  font-family: "Boldonse", system-ui;
-  font-weight: 400;
-  font-style: normal;
-  text-shadow: 3px 3px 5px black;
+    font-size: 1.875rem;
+    margin-bottom: 2rem;
+    min-height: 3rem;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 3px 3px 5px black;
 }
 
 .looking-for {
-  color: #ffd700;
+    color: #ffd700;
 }
 
 .cursor {
-  animation: blink 1s infinite;
+    animation: blink 1s infinite;
 }
 
 #typing-text {
-  font-size: 2rem;
-  font-family: "Courier New", Courier, monospace;
+    font-size: 2rem;
+    font-family: "Courier New", Courier, monospace;
 }
 
 @keyframes blink {
-  0%,
-  50% {
-    opacity: 1;
-  }
-  51%,
-  100% {
-    opacity: 0;
-  }
+
+    0%,
+    50% {
+        opacity: 1;
+    }
+
+    51%,
+    100% {
+        opacity: 0;
+    }
 }
 
 .events-and-data {
@@ -459,11 +461,11 @@ h3 {
     border-radius: 50%;
 }
 
-.toggle-switch input:checked + .toggle-slider {
+.toggle-switch input:checked+.toggle-slider {
     background-color: #00881b;
 }
 
-.toggle-switch input:checked + .toggle-slider:before {
+.toggle-switch input:checked+.toggle-slider:before {
     transform: translateX(26px);
 }
 
@@ -542,4 +544,119 @@ h3 {
     font-size: 1rem;
     color: #666;
     margin-top: 2em;
+}
+
+/* extra stuff here on out, all code requirements finished */
+
+.flicker-text {
+    align-items: center;
+    justify-content: flex-start;
+    gap: -1px;
+    z-index: 1;
+    animation: textFlash 10s linear infinite;
+    cursor: pointer;
+    width: fit-content;
+    margin: 1em auto;
+}
+
+@keyframes textFlash {
+    0% {
+        color: black;
+    }
+
+    1% {
+        color: #bfbfbf;
+    }
+
+    1.001% {
+        color: black;
+    }
+
+    10% {
+        color: black;
+    }
+
+    11.001% {
+        color: #bfbfbf;
+    }
+
+    11.002% {
+        color: black;
+    }
+
+    12% {
+        color: #bfbfbf;
+    }
+
+    39.999% {
+        color: #bfbfbf;
+    }
+
+    40% {
+        color: black;
+    }
+
+    41% {
+        color: #bfbfbf;
+    }
+
+    74% {
+        color: #bfbfbf;
+    }
+
+    75% {
+        color: black;
+    }
+
+    75.5% {
+        color: black;
+    }
+
+    75.501% {
+        color: black;
+    }
+
+    80% {
+        color: black;
+    }
+
+    81.001% {
+        color: #bfbfbf;
+    }
+
+    82% {
+        color: #bfbfbf;
+    }
+
+    82.001% {
+        color: #bfbfbf;
+    }
+
+    82.002% {
+        color: black;
+    }
+
+    82% {
+        color: #bfbfbf;
+    }
+
+    83.001% {
+        color: black;
+    }
+
+    83.002% {
+        color: #bfbfbf;
+    }
+
+    83.003% {
+        color: black;
+    }
+
+    87.05% {
+        color: black;
+    }
+
+    88% {
+        color: #bfbfbf;
+    }
 }
