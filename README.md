@@ -9,6 +9,7 @@ Sources I used for help:
 -https://medium.com/analytics-vidhya/local-storage-with-vanilla-javascript-c87e3923163a
 
 chunks of code from older projects used:
+
 -typing effect of signature lyrics
 
 -welcome text flash
