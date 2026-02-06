@@ -490,4 +490,26 @@ function onDomReady() {
             alert('You found the secret flicker text! 🎉');
         });
     }
+
+    const scrollToTopBtn = document.createElement("button");
+    scrollToTopBtn.className = "scroll-to-top";
+    scrollToTopBtn.innerHTML = "↑";
+    scrollToTopBtn.setAttribute("aria-label", "Scroll to top");
+    scrollToTopBtn.style.position = "fixed";
+    document.body.appendChild(scrollToTopBtn);
+
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+            scrollToTopBtn.classList.add("visible");
+        } else {
+            scrollToTopBtn.classList.remove("visible");
+        }
+    });
+
+    scrollToTopBtn.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    });
 }
